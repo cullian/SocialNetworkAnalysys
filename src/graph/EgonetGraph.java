@@ -1,34 +1,23 @@
 /**
+ * @author William Cullian
  * Egonet is a graph class designed to hold egonets and stats on them
+ *  
+ */
+/**
  */
 package graph;
 
-/**
- * @author William Cullian
- *
- */
-public class Egonet extends SocialNetworkGraph {
+public class EgonetGraph extends SocialNetworkGraph {
 
 	private EgonetData data;
 
 	/**
 	 * Create a new empty Egonet
 	 */
-	public Egonet(int user) {
+	public EgonetGraph(int user) {
 		super();
 		data = new EgonetData(user);
 		this.addFriend(user);
-	}
-
-	/**
-	 * Prints all the vertices and their respective edge lists for debugging
-	 * purposes
-	 */
-	@Override
-	public void printGraph() {
-		for (UserNode node : people.values()) {
-			System.out.println(node);
-		}
 	}
 
 	/**
@@ -118,18 +107,19 @@ public class Egonet extends SocialNetworkGraph {
 
 	public Graph exportEgonet() {
 		// create object to return
-		Egonet ret = new Egonet(data.getCentralEgoUser());
+		EgonetGraph ret = new EgonetGraph(data.getCentralEgoUser());
 		// iterate thru each node
 		for (UserNode node : people.values()) {
 			// add nodes to return object
 			ret.addFriend(node.getUserNumber());
 		}
 		// go thru again and add edges
-		for (UserNode node : people.values()) {
-			for (FriendshipEdge friendship : node.getFriends()) {
-				ret.addFriendship(friendship.getSource(), friendship.getTarget());
-			}
-		}
+//		for (UserNode node : people.values()) {
+//			for (FriendshipEdge friendship : node.getFriends()) {
+//				ret.addFriendship(friendship.getSource(), friendship.getTarget());
+//			}
+//		}
+		fillInEdges(ret);
 		ret.setEgonetDepth(data.getEgonetDepth());
 		return ret;
 	}
@@ -139,7 +129,7 @@ public class Egonet extends SocialNetworkGraph {
 			data.setAveNumOfFriendships(0);
 			return;
 		}
-		data.setAveNumOfFriendships(((double) super.data.getNumEdges() / 2) / (super.data.getNumPeople()));
+		data.setAveNumOfFriendships((double)( super.data.getNumEdges() / 2) / (super.data.getNumPeople()));
 
 	}
 

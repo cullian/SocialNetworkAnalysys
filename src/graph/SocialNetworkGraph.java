@@ -150,7 +150,7 @@ public class SocialNetworkGraph implements Graph {
 
 	public double getDensity() {
 		if(data.getNumPeople() < 2) {return 0.0;}
-		double graphDensity = data.getNumEdges() / ((double)(data.getNumPeople() * (data.getNumPeople() - 1)) / 2);
+		double graphDensity = (data.getNumEdges()) / ((double)(data.getNumPeople() * (data.getNumPeople() - 1)));
 		return graphDensity;
 	}
 
@@ -222,7 +222,7 @@ public class SocialNetworkGraph implements Graph {
 		ret = transposeGraph.exportGraph();
 		return ret;
 	}
-
+	
 	/**
 	 * This method generates egonets for user and prints stats
 	 * 
@@ -234,7 +234,7 @@ public class SocialNetworkGraph implements Graph {
 		// print stats
 		System.out.println("\nPRINT EGONETS OF " + user + " TO DEPTH " + depth + " ---------------\n");
 		for (Graph graph : egonets) {
-			((Egonet) graph).printStats();
+			((EgonetGraph) graph).printStats();
 			System.out.println();
 		}
 		return egonets;
@@ -275,7 +275,7 @@ public class SocialNetworkGraph implements Graph {
 		visited.add(centerUser);
 
 		// create new graph for centerUser to return
-		Egonet egonet = new Egonet(centerUser);
+		EgonetGraph egonet = new EgonetGraph(centerUser);
 
 		// while qOfQueues is not empty and depth not too deep
 		while (!qOfQueues.isEmpty() && depthCounter < depth) {
@@ -428,16 +428,16 @@ public class SocialNetworkGraph implements Graph {
 	 * the scc graph and any edges to nodes not in the scc graph will not be
 	 * created.
 	 * 
-	 * @param scc:
-	 *            a graph with all the scc vertices
+	 * @param graph:
+	 *            a graph with nodes only
 	 */
-	private void fillInEdges(Graph egonet) {
+	protected void fillInEdges(Graph graph) {
 		// for each node in egonet
-		for (Integer node : egonet.getPeople()) {
+		for (Integer node : graph.getPeople()) {
 			// for each edge in each node in parent graph
 			for (FriendshipEdge edge : people.get(node).getFriends()) {
 				// add the edge to egonet graph
-				egonet.addFriendship(edge.getSource(), edge.getTarget());
+				graph.addFriendship(edge.getSource(), edge.getTarget());
 			}
 		}
 

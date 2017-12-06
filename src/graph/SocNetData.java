@@ -57,8 +57,7 @@ public class SocNetData implements Data{
 
 	@Override
 	public void printData() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("People: " + numPeople + " Edges: " + numEdges);		
 	}
 
 

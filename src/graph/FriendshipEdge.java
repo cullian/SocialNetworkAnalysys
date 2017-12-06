@@ -71,12 +71,10 @@ class FriendshipEdge implements Comparable<FriendshipEdge> {
 		final int EQUAL = 0;
 		final int AFTER = 1;
 
-		// this optimization is usually worthwhile, and can
-		// always be added
+		// this optimization is usually worthwhile
 		if (this == otherEdge)
 			return EQUAL;
 
-		// primitive numbers follow this form
 		if (this.target == otherEdge.target && this.source == otherEdge.source)
 			return EQUAL;
 		if (this.target < otherEdge.target)
