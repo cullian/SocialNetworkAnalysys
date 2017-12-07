@@ -14,9 +14,9 @@ package graph;
 
 import java.util.HashSet;
 
-class UserNode {
+class UserNode implements Node{
 	private int userNumber; // number of person
-	private HashSet<FriendshipEdge> friendships; // list of friends of this person
+	private HashSet<Edge> friendships; // list of friends of this person
 
 	/**
 	 * Constructor sets user number with empty edge list
@@ -26,7 +26,7 @@ class UserNode {
 	public UserNode(int num) {
 		super();
 		this.userNumber = num;
-		this.friendships = new HashSet<FriendshipEdge>();
+		this.friendships = new HashSet<Edge>();
 	}
 
 	/**
@@ -36,10 +36,10 @@ class UserNode {
 	 *            newEdge to list
 	 * @return true if edge added
 	 */
-	public boolean addFriend(FriendshipEdge newEdge) {
+	public boolean addFriend(Edge newEdge) {
 		// if friendships contains new edge return false
-		for (FriendshipEdge friendshipEdge : friendships) {
-			if (friendshipEdge.compareTo(newEdge) == 0) {
+		for (Edge edge : friendships) {
+			if (edge.compareTo(newEdge) == 0) {
 				return false;
 			}
 		}
@@ -48,21 +48,39 @@ class UserNode {
 		return true;
 	}
 
-	public int getDegree() {
-		return friendships.size();
-	}
-
 	public int getUserNumber() {
 		return userNumber;
 	}
 
-	public HashSet<FriendshipEdge> getFriends() {
-		return new HashSet<FriendshipEdge>(friendships);
+	public int getDegree() {
+		return friendships.size();
+	}
+
+	public HashSet<Edge> getFriends() {
+		return new HashSet<Edge>(friendships);
 	}
 
 	@Override
 	public String toString() {
 		return "UserNode [userNumber=" + userNumber + ", friendships=" + friendships + "]";
+	}
+
+	/**
+	 * @param source
+	 * @param target
+	 */
+	public void removeEdge(int source, int target) {
+		FriendshipEdge edgeToRemove = new FriendshipEdge(source, target);
+		friendships.remove(edgeToRemove);
+		
+	}
+
+	/**
+	 * @param edgeWithHighestFlow
+	 */
+	public void removeEdge(CentralityEdge edgeWithHighestFlow) {
+		friendships.remove(edgeWithHighestFlow);
+		
 	}
 
 }

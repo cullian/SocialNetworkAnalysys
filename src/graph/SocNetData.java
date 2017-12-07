@@ -72,4 +72,12 @@ public class SocNetData implements Data{
 		
 	}
 
+	/**
+	 * 
+	 */
+	public void decreaseEdgeCount() {
+		this.numEdges -= 2;
+		
+	}
+
 }

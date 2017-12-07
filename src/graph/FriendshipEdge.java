@@ -10,7 +10,7 @@
  */
 package graph;
 
-class FriendshipEdge implements Comparable<FriendshipEdge> {
+class FriendshipEdge implements Edge, Comparable<Edge> {
 	private int source;
 	private int target;
 
@@ -66,7 +66,7 @@ class FriendshipEdge implements Comparable<FriendshipEdge> {
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
 	 */
 	@Override
-	public int compareTo(FriendshipEdge otherEdge) {
+	public int compareTo(Edge otherEdge) {
 		final int BEFORE = -1;
 		final int EQUAL = 0;
 		final int AFTER = 1;
@@ -75,15 +75,46 @@ class FriendshipEdge implements Comparable<FriendshipEdge> {
 		if (this == otherEdge)
 			return EQUAL;
 
-		if (this.target == otherEdge.target && this.source == otherEdge.source)
+		if (this.target == otherEdge.getTarget() && this.source == otherEdge.getSource())
 			return EQUAL;
-		if (this.target < otherEdge.target)
+		if (this.target < otherEdge.getTarget())
 			return BEFORE;
-		if (this.target > otherEdge.target)
+		if (this.target > otherEdge.getTarget())
 			return AFTER;
-		if (this.source > otherEdge.source)
+		if (this.source > otherEdge.getSource())
 			return AFTER;
 		return BEFORE;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + source;
+		result = prime * result + target;
+		return result;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		FriendshipEdge other = (FriendshipEdge) obj;
+		if (source != other.source)
+			return false;
+		if (target != other.target)
+			return false;
+		return true;
 	}
 
 }

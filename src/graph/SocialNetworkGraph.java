@@ -54,6 +54,14 @@ public class SocialNetworkGraph implements Graph {
 	}
 
 	/**
+	 * @param i
+	 */
+	public Node getPerson(int userNumber) {
+		return people.get(userNumber);
+		
+	}
+
+	/**
 	 * Get the number of friendships in the graph
 	 * 
 	 * @return The number of friendships in the graph.
@@ -93,7 +101,7 @@ public class SocialNetworkGraph implements Graph {
 			}
 			System.out.println("Number of users with degree " + degree + ": " + degrees.get(degree));
 		}
-		System.out.println("Degree with most users: " + d + " with " + highestValue + " users");
+		System.out.println("Degree with most users: " + highestValue + " users" + " with degree " + d);
 	}
 
 	/**
@@ -172,7 +180,7 @@ public class SocialNetworkGraph implements Graph {
 		for (UserNode node : people.values()) {
 			// make hashset of nodes neighbors
 			HashSet<Integer> neighbors = new HashSet<Integer>();
-			for (FriendshipEdge edge : node.getFriends()) {
+			for (Edge edge : node.getFriends()) {
 				neighbors.add(edge.getTarget());
 			}
 			// add node and neighbors to return object
@@ -215,7 +223,7 @@ public class SocialNetworkGraph implements Graph {
 		}
 		// now go thru again and add the edges transposed
 		for (UserNode node : people.values()) {
-			for (FriendshipEdge edge : node.getFriends()) {
+			for (Edge edge : node.getFriends()) {
 				transposeGraph.addFriendship(edge.getTarget(), edge.getSource());
 			}
 		}
@@ -292,7 +300,7 @@ public class SocialNetworkGraph implements Graph {
 				// get current node(user)
 				UserNode curr = people.get(currQueue.removeFirst());
 				// loop thru edges(friends)
-				for (FriendshipEdge friend : curr.getFriends()) {
+				for (Edge friend : curr.getFriends()) {
 					// get friends number
 					int friendNumber = friend.getTarget();
 					// if already visited, continue
@@ -435,7 +443,7 @@ public class SocialNetworkGraph implements Graph {
 		// for each node in egonet
 		for (Integer node : graph.getPeople()) {
 			// for each edge in each node in parent graph
-			for (FriendshipEdge edge : people.get(node).getFriends()) {
+			for (Edge edge : people.get(node).getFriends()) {
 				// add the edge to egonet graph
 				graph.addFriendship(edge.getSource(), edge.getTarget());
 			}
@@ -443,7 +451,23 @@ public class SocialNetworkGraph implements Graph {
 
 	}
 
+	public static void testing() {
+		CentralityGraph test = new CentralityGraph();
+		GraphLoader.loadGraph(test, "data/test2.txt");
+		test.printStats();
+		test.printGraph();
+		System.out.println("\nRemove edge from 3 to 7-------------");
+		test.getPerson(3).removeEdge(3, 7);
+		test.getPerson(7).removeEdge(7, 3);
+		test.printStats();
+		test.printGraph();
+		
+	}
+	
+	
 	public static void main(String[] args) {
+		testing();
+		
 		System.out.print("Making new maps...");
 		SocialNetworkGraph soloEgo = new SocialNetworkGraph();
 		SocialNetworkGraph sparse = new SocialNetworkGraph();
