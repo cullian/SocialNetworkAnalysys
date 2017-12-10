@@ -7,6 +7,11 @@
  */
 package graph;
 
+import java.util.ArrayDeque;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class EgonetGraph extends SocialNetworkGraph {
 
 	private EgonetData data;
@@ -109,13 +114,13 @@ public class EgonetGraph extends SocialNetworkGraph {
 		// create object to return
 		EgonetGraph ret = new EgonetGraph(data.getCentralEgoUser());
 		// iterate thru each node
-		for (UserNode node : people.values()) {
+		for (Node node : people.values()) {
 			// add nodes to return object
 			ret.addFriend(node.getUserNumber());
 		}
 		// go thru again and add edges
-//		for (UserNode node : people.values()) {
-//			for (FriendshipEdge friendship : node.getFriends()) {
+//		for (Node node : people.values()) {
+//			for (Edge friendship : node.getFriends()) {
 //				ret.addFriendship(friendship.getSource(), friendship.getTarget());
 //			}
 //		}
@@ -125,11 +130,11 @@ public class EgonetGraph extends SocialNetworkGraph {
 	}
 
 	private void recalculateFriendAverage() {
-		if (super.data.getNumPeople() < 2) {
+		if (getNumPeople() < 2) {
 			data.setAveNumOfFriendships(0);
 			return;
 		}
-		data.setAveNumOfFriendships((double)( super.data.getNumEdges() / 2) / (super.data.getNumPeople()));
+		data.setAveNumOfFriendships((double)(getNumFriendships() / 2) / (getNumPeople()));
 
 	}
 

@@ -8,5 +8,4 @@ package graph;
  *
  */
 public interface Data {
-	public void printData();
 }

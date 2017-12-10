@@ -1,6 +1,6 @@
 package graph;
 
-public class EgonetData extends SocNetData{
+public class EgonetData implements Data{
 	// fields for egonet info
 	private int centralEgoUser;
 	private int egonetDepth;
@@ -10,24 +10,10 @@ public class EgonetData extends SocNetData{
 	 * @param centralEgoUser
 	 */
 	public EgonetData(int centralEgoUser) {
-		super(0, 0);
+		super();
 		this.centralEgoUser = centralEgoUser;
 		this.egonetDepth = 0;
 		this.aveNumOfFriendships = 0;
-	}
-
-	/**
-	 * @param numPeople
-	 * @param numEdges
-	 * @param centralEgoUser
-	 * @param egonetDepth
-	 * @param aveNumOfFriendships
-	 */
-	public EgonetData(int numPeople, int numEdges, int centralEgoUser, int egonetDepth, double aveNumOfFriendships) {
-		super(numPeople, numEdges);
-		this.centralEgoUser = centralEgoUser;
-		this.egonetDepth = egonetDepth;
-		this.aveNumOfFriendships = aveNumOfFriendships;
 	}
 
 	/**

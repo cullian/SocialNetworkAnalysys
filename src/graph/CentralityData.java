@@ -1,98 +1,153 @@
 /**
- * @author William Cullian
- * Dec 4, 2017
- *
+ * 
  */
-
 package graph;
 
-import java.util.HashSet;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.LinkedList;
 
-public class CentralityData extends SocNetData {
+//import graph.CentralityData.Pair;
 
-	// fields
-	private CentralityEdge edgeWithHighestFlow;
-	private int nodeWithHighestCentrality;
-	private LinkedList<EgonetGraph> highestDegreeNodes;
-	private LinkedList<EgonetGraph> highestCentralityNodes;
+/**
+ * @author William
+ *
+ */
+public class CentralityData implements Data {
+
+//	// pair class to hold 
+//	public class Pair {
+//		int x;
+//		int y;
+//
+//		/**
+//		 * @param x
+//		 * @param y
+//		 */
+//		public Pair(int x, int y) {
+//			super();
+//			this.x = x;
+//			this.y = y;
+//		}
+//
+//	}
+
+	private LinkedList<CentralityGraph> subCommunities;
+	private int highestDegreeNode;
+	private int highestCentralityNode;
+	private HashMap<Edge, Double> edgeBetweenness;
 
 	/**
-	 * @param numPeople
-	 * @param numEdges
-	 * @param edgeWithHighestFlow
-	 * @param nodeWithHighestCentrality
-	 * @param highestDegreeNodes
+	 * @param subCommunities
+	 * @param highestDegreeNode
+	 * @param highestCentralityNode
+	 * @param edgeBetweenness
 	 */
-	public CentralityData(int numPeople, int numEdges, CentralityEdge edgeWithHighestFlow, int nodeWithHighestCentrality,
-			LinkedList<EgonetGraph> highestDegreeNodes) {
-		super(numPeople, numEdges);
-		this.edgeWithHighestFlow = edgeWithHighestFlow;
-		this.nodeWithHighestCentrality = nodeWithHighestCentrality;
-		this.highestDegreeNodes = highestDegreeNodes;
-	}
-
 	public CentralityData() {
-		super(0, 0);
-		this.edgeWithHighestFlow = null;
-		this.nodeWithHighestCentrality = -1;
-		this.highestDegreeNodes = null;
+		super();
+		this.subCommunities = new LinkedList<>();
+		this.highestDegreeNode = -1;
+		this.highestCentralityNode = -1;
+		this.edgeBetweenness = new HashMap<>();
 	}
 
 	/**
-	 * @return the edgeWithHighestFlow
+	 * @return the edgeBetweenness
 	 */
-	public CentralityEdge getEdgeWithHighestFlow() {
-		return edgeWithHighestFlow;
+	public HashMap<Edge, Double> getEdgeBetweenness() {
+		return edgeBetweenness;
 	}
 
 	/**
-	 * @param edgeWithHighestFlow the edgeWithHighestFlow to set
+	 * @param edgeBetweenness
+	 *            the edgeBetweenness to set
 	 */
-	public void setEdgeWithHighestFlow(CentralityEdge edgeWithHighestFlow) {
-		this.edgeWithHighestFlow = edgeWithHighestFlow;
+	public void setEdgeBetweenness(HashMap<Edge, Double> edgeBetweenness) {
+		this.edgeBetweenness = edgeBetweenness;
 	}
 
 	/**
-	 * @return the nodeWithHighestCentrality
+	 * @param edgeBetweenness
+	 *            the edgeBetweenness to set
 	 */
-	public int getNodeWithHighestCentrality() {
-		return nodeWithHighestCentrality;
+	public void initializeEdgeBetweenness(Collection<Node> nodes) {
+		for (Node node : nodes) {
+			for (Edge edge : node.getFriends()) {
+				this.edgeBetweenness.put(edge, 0.0);
+			}
+		}
 	}
 
 	/**
-	 * @param nodeWithHighestCentrality the nodeWithHighestCentrality to set
+	 * @param flow
 	 */
-	public void setNodeWithHighestCentrality(int nodeWithHighestCentrality) {
-		this.nodeWithHighestCentrality = nodeWithHighestCentrality;
+	public void addFlowMatrix(HashMap<Edge, Double> flow, int size) {
+		for (Edge edge : flow.keySet()) {
+			double edgeVal = edgeBetweenness.get(edge);
+			edgeVal += flow.get(edge);
+			edgeBetweenness.put(edge, edgeVal);
+		}
+
 	}
 
 	/**
-	 * @return the highestDegreeNodes
+	 * @return the subCommunities
 	 */
-	public LinkedList<EgonetGraph> getHighestDegreeNodes() {
-		return highestDegreeNodes;
+	public LinkedList<CentralityGraph> getSubCommunities() {
+		return subCommunities;
 	}
 
 	/**
-	 * @param highestDegreeNodes the highestDegreeNodes to set
+	 * @param subCommunities
+	 *            the subCommunities to set
 	 */
-	public void setHighestDegreeNodes(LinkedList<EgonetGraph> highestDegreeNodes) {
-		this.highestDegreeNodes = highestDegreeNodes;
+	public void addSubCommunity(CentralityGraph subCommunity) {
+		this.subCommunities.add(subCommunity);
 	}
 
 	/**
-	 * @return the highestCentralityNodes
+	 * @param subCommunities2
 	 */
-	public LinkedList<EgonetGraph> getHighestCentralityNodes() {
-		return highestCentralityNodes;
+	public void addSubCommunitys(LinkedList<CentralityGraph> scs) {
+		this.subCommunities.addAll(scs);
 	}
 
 	/**
-	 * @param highestCentralityNodes the highestCentralityNodes to set
+	 * @param subCommunities
+	 *            the subCommunities to set
 	 */
-	public void setHighestCentralityNodes(LinkedList<EgonetGraph> highestCentralityNodes) {
-		this.highestCentralityNodes = highestCentralityNodes;
+	public void removeSubCommunity(SocialNetworkGraph subCommunity) {
+		this.subCommunities.remove(subCommunity);
+	}
+
+	/**
+	 * @return the highestDegreeNode
+	 */
+	public int getHighestDegreeNode() {
+		return highestDegreeNode;
+	}
+
+	/**
+	 * @param highestDegreeNode
+	 *            the highestDegreeNode to set
+	 */
+	public void setHighestDegreeNode(int highestDegreeNode) {
+		this.highestDegreeNode = highestDegreeNode;
+	}
+
+	/**
+	 * @return the highestCentralityNode
+	 */
+	public int getHighestCentralityNode() {
+		return highestCentralityNode;
+	}
+
+	/**
+	 * @param highestCentralityNode
+	 *            the highestCentralityNode to set
+	 */
+	public void setHighestCentralityNode(int highestCentralityNode) {
+		this.highestCentralityNode = highestCentralityNode;
 	}
 
 }

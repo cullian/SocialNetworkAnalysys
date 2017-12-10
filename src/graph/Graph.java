@@ -21,5 +21,5 @@ public interface Graph {
 
 	public void printGraph();
 
-	public Set<Integer> getPeople();
+	public Set<Integer> getPeopleNums();
 }
