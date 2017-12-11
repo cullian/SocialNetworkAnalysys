@@ -7,10 +7,10 @@
 package graph;
 
 import java.util.ArrayDeque;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.Map;
 import java.util.Queue;
 
 public class CentralityGraph extends SocialNetworkGraph {
@@ -95,7 +95,7 @@ public class CentralityGraph extends SocialNetworkGraph {
 		subGraph.addFriend(userNum);
 		Node user = getPerson(userNum);
 		// DFS friends
-		for (Edge friend : user.friendships) {
+		for (Edge friend : user.getFriends()) {
 			int friendNumber = friend.getTarget();
 			// check if visited first
 			if (!visited.contains(friendNumber)) {
@@ -107,6 +107,10 @@ public class CentralityGraph extends SocialNetworkGraph {
 	}
 
 	/**
+	 * Given a list of sub communities and maxSize, returns a list
+	 * of communities larger than maxSize extracted from list of
+	 * sub communities
+	 * 
 	 * @param subCommunities
 	 * @param maxSize
 	 * @return
@@ -129,89 +133,93 @@ public class CentralityGraph extends SocialNetworkGraph {
 	}
 
 	/**
+	 * Computes betweenness then breaks the strongest link
+	 * 
 	 * @param currCommunity
 	 */
 	void breakStrongestLink() {
 		computeBetweenness();
-
 		removeLargestFlow();
-
 	}
 
 	/**
+	 * Computes centrality of betweenness and flow for graph
+	 * 
 	 * @param currCommunity
 	 */
 	void computeBetweenness() {
 		// set Centrality of Betweenness to 0 for all nodes
+		// set sigma(v,t|v)(shortest paths) to 0 for all nodes
 		resetNodesInitial();
-		// set sigma(v,t|v) to 0 for all nodes
-		setSigmaZeroForAllNodes();
-		// for all nodes in graph
-		for (Integer currNode : getPeopleNums()) {
+		// for all nodes in graph find shortest paths
+		// by using BFS starting from each node in graph
+		for (int currNode : getPeopleNums()) {
+			// reset distance, predecessors and delta for each start
 			resetNodes();
+			// stack to go back thru the nodes for delta accumulation
 			ArrayDeque<Integer> stack = new ArrayDeque<>();
 			BFS(currNode, stack);
+			// Set all nodes edge betweenness(flow) to 0
 			data.initializeEdgeBetweenness(getPeople());
+			// go back thru nodes to calculate delta and distribute it to
+			// Centrality of betweenness, as well as flow for the edges
 			HashMap<Edge, Double> flow = calculateDelta(currNode, stack);
-			data.addFlowMatrix(flow, getNumPeople());
+			data.addFlowMatrix(flow);
 		}
 		findAndSetHighestCentralityAndDegreeNode();
-		// TODO record stats
-
 	}
 
 	/**
-	 * 
-	 */
-	private void setSigmaZeroForAllNodes() {
-		for (Node node : getPeople()) {
-			node.setShortestPathCount(0);
-		}
-	}
-
-	/**
-	 * 
+	 * Resets node before computing betweenness
 	 */
 	private void resetNodesInitial() {
-		for (int currNodeNum : getPeopleNums()) {
-			Node currNode = getPerson(currNodeNum);
-			((Node) currNode).setCentralityOfBetweenness(0.0);
-			((Node) currNode).setDistance(Double.POSITIVE_INFINITY);
-			((Node) currNode).resetPredecessors();
-			((Node) currNode).setDelta(0.0);
+		for (Node currNode : getPeople()) {
+			currNode.setCentralityOfBetweenness(0.0);
+			currNode.setShortestPathCount(0);
+			currNode.setDistance(Double.POSITIVE_INFINITY);
+			currNode.resetPredecessors();
+			currNode.setDelta(0.0);
 		}
 	}
 
 	/**
-	 * @param currCommunity
+	 * Resets distance, predecessors and delta only
 	 */
 	private void resetNodes() {
 		for (Node currNode : people.values()) {
-			((Node) currNode).setDistance(Double.POSITIVE_INFINITY);
-			((Node) currNode).resetPredecessors();
-			((Node) currNode).setDelta(0.0);
+			currNode.setDistance(Double.POSITIVE_INFINITY);
+			currNode.resetPredecessors();
+			currNode.setDelta(0.0);
 		}
 	}
 
 	/**
-	 * 
+	 * Self explanatory
 	 */
 	private void findAndSetHighestCentralityAndDegreeNode() {
+		Collection<Node> nodes = getPeople();
+		boolean firstTime = true;
 		double highestCentrality = 0;
 		int highestCentralityNum = -1;
 		int highestDegree = 0;
 		int highestDegreeNum = -1;
-		for (int nodeNum : getPeopleNums()) {
-			Node node = getPerson(nodeNum);
-			double cB = ((Node) node).getCentralityOfBetweenness();
-			int degree = ((Node) node).getDegree();
+		for (Node node : nodes) {
+			if (firstTime) {
+				highestCentrality = node.getCentralityOfBetweenness();
+				highestCentralityNum = node.getUserNumber();
+				highestDegree = node.getDegree();
+				highestDegreeNum = node.getUserNumber();
+				firstTime = false;
+			}
+			double cB = node.getCentralityOfBetweenness();
+			int degree = node.getDegree();
 			if (cB > highestCentrality) {
 				highestCentrality = cB;
-				highestCentralityNum = nodeNum;
+				highestCentralityNum = node.getUserNumber();
 			}
 			if (degree > highestDegree) {
 				highestDegree = degree;
-				highestDegreeNum = nodeNum;
+				highestDegreeNum = node.getUserNumber();
 			}
 		}
 		data.setHighestCentralityNode(highestCentralityNum);
@@ -219,7 +227,7 @@ public class CentralityGraph extends SocialNetworkGraph {
 	}
 
 	/**
-	 * @param currCommunity
+	 * Self explanatory
 	 */
 	private void removeLargestFlow() {
 		Edge highestEdge = findEdgeWithLargestFlow();
@@ -228,8 +236,9 @@ public class CentralityGraph extends SocialNetworkGraph {
 	}
 
 	/**
-	 * @param edgeBetweenness
-	 * @return
+	 * Self explanatory
+	 * 
+	 * @return edge with largest flow
 	 */
 	private Edge findEdgeWithLargestFlow() {
 		// get betweenness matrix
@@ -237,7 +246,13 @@ public class CentralityGraph extends SocialNetworkGraph {
 		// find edge with largest flow
 		double maxFlow = 0.0;
 		Edge highestEdge = new Edge(-1, -1);
+		boolean firstTime = true;
 		for (Edge edge : edgeBetweenness.keySet()) {
+			if (firstTime) {
+				maxFlow = edgeBetweenness.get(edge);
+				highestEdge = edge;
+				firstTime = false;
+			}
 			if (edgeBetweenness.get(edge) > maxFlow) {
 				maxFlow = edgeBetweenness.get(edge);
 				highestEdge = edge;
@@ -247,7 +262,9 @@ public class CentralityGraph extends SocialNetworkGraph {
 	}
 
 	/**
-	 * @param highestEdge
+	 * Removes edge and sister edge, reduces edge count
+	 * 
+	 * @param edgeToRemove
 	 */
 	private void removeEdge(Edge edgeToRemove) {
 		int source = edgeToRemove.getSource();
@@ -256,11 +273,15 @@ public class CentralityGraph extends SocialNetworkGraph {
 		Node targetNode = people.get(target);
 		sourceNode.removeEdge(edgeToRemove);
 		decreaseEdgeCount();
-		targetNode.removeEdge(edgeToRemove);
+		Edge sisterEdge = new Edge(target, source);
+		targetNode.removeEdge(sisterEdge);
 		decreaseEdgeCount();
 	}
 
 	/**
+	 * Calculates delta for brandes algorithm, also distributes flow
+	 * to the edges
+	 * 
 	 * @param currCommunity
 	 * @param stack
 	 */
@@ -297,7 +318,8 @@ public class CentralityGraph extends SocialNetworkGraph {
 	}
 
 	/**
-	 * @param currCommunity
+	 * Distributes flow to the edges
+	 * 
 	 * @param curr
 	 * @param startNode
 	 * @param flow
@@ -346,19 +368,20 @@ public class CentralityGraph extends SocialNetworkGraph {
 		LinkedList<Integer> queue = new LinkedList<>();
 		queue.add(startNode);
 		// set distance of startNode to 0
-		((Node) getPerson(startNode)).setDistance(0.0);
+		getPerson(startNode).setDistance(0.0);
 		// while queue is not empty
 		while (!queue.isEmpty()) {
 			// deque currNode and add it to stack
 			int currNodeNum = queue.remove();
-			Node currNode = (Node) getPerson(currNodeNum);
+			Node currNode = getPerson(currNodeNum);
 			stack.push(currNodeNum);
 			double sourceDistance = currNode.getDistance();
 			// for all currNodes friends
 			for (Edge currEdge : currNode.getFriends()) {
-				Node currFriend = ((Node) getPerson(currEdge.getTarget()));
+				Node currFriend = getPerson(currEdge.getTarget());
 				// if currFriend distance is infinity, it hasn't been visited
-				// yet
+				// yet, so set distance to source distance + 1 and enque
+				// currFriend
 				if (currFriend.getDistance() == Double.POSITIVE_INFINITY) {
 					// set currFriend distance to source node distance + 1
 					currFriend.setDistance(sourceDistance + 1);
@@ -384,18 +407,22 @@ public class CentralityGraph extends SocialNetworkGraph {
 	}
 
 	/**
+	 * Print stats for list of sub communities
+	 * 
 	 * @param subCommunities
 	 */
 	void printCommunityStats(Queue<CentralityGraph> subCommunities) {
-		System.out.println("\nNumber of sub-communities in this graph: " + subCommunities.size());
+		System.out.println("\nNumber of sub-communities in this graph: " + subCommunities.size() + "\n");
 		int count = 1;
 		for (CentralityGraph curr : subCommunities) {
 			System.out.println("Community #" + count++);
 			System.out.println("Number of people: " + curr.getNumPeople());
 			System.out.println("Number of friendships " + curr.getNumFriendships());
 			System.out.println("Edge with highest flow " + curr.findEdgeWithLargestFlow());
-			System.out.println("Node with highest centrality" + curr.data.getHighestCentralityNode());
-			System.out.println("Node with highest degree" + curr.data.getHighestDegreeNode());
+			System.out.println("Node with highest centrality " + curr.data.getHighestCentralityNode());
+			curr.evaluateEgonets(curr.data.getHighestCentralityNode(), 1);
+			System.out.println("Node with highest degree " + curr.data.getHighestDegreeNode());
+			curr.evaluateEgonets(curr.data.getHighestDegreeNode(), 1);
 		}
 
 	}

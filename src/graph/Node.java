@@ -1,4 +1,7 @@
 /**
+ * Node class for use with Graph class objects.  Contains
+ * user number and list of friendships as well as fields and
+ * method for analyzing communities
  * @author William Cullian
  * Dec 9, 2017
  *
@@ -8,22 +11,19 @@ package graph;
 
 import java.util.HashSet;
 
-/**
- * @author William
- *
- */
 public class Node {
 
-	protected int userNumber;
-	protected HashSet<Edge> friendships;
-	protected double centralityOfBetweenness;
-	protected double distance;
-	protected HashSet<Integer> predecessors;
-	protected double delta;
-	protected Integer shortestPathCount;
-
+	private int userNumber;
+	private HashSet<Edge> friendships;
+	private double centralityOfBetweenness;
+	private double distance;
+	private HashSet<Integer> predecessors;
+	private double delta;
+	private int shortestPathCount;
 
 	/**
+	 * Create new node for userNumber
+	 * 
 	 * @param userNumber
 	 */
 	public Node(int userNumber) {
@@ -40,14 +40,15 @@ public class Node {
 	/**
 	 * @return the shortestPathCount
 	 */
-	public Integer getShortestPathCount() {
+	public int getShortestPathCount() {
 		return shortestPathCount;
 	}
 
 	/**
-	 * @param shortestPathCount the shortestPathCount to set
+	 * @param shortestPathCount
+	 *            the shortestPathCount to set
 	 */
-	public void setShortestPathCount(Integer shortestPathCount) {
+	public void setShortestPathCount(int shortestPathCount) {
 		this.shortestPathCount = shortestPathCount;
 	}
 
@@ -90,7 +91,7 @@ public class Node {
 	public void removeEdge(int source, int target) {
 		Edge edgeToRemove = new Edge(source, target);
 		friendships.remove(edgeToRemove);
-		
+
 	}
 
 	/**
@@ -98,7 +99,7 @@ public class Node {
 	 */
 	public void removeEdge(Edge edgeWithHighestFlow) {
 		friendships.remove(edgeWithHighestFlow);
-		
+
 	}
 
 	/**
@@ -128,7 +129,7 @@ public class Node {
 	 */
 	public void addPredecessor(int currNodeNum) {
 		this.predecessors.add(currNodeNum);
-		
+
 	}
 
 	/**
@@ -146,7 +147,8 @@ public class Node {
 	}
 
 	/**
-	 * @param centralityOfBetweenness the centralityOfBetweenness to set
+	 * @param centralityOfBetweenness
+	 *            the centralityOfBetweenness to set
 	 */
 	public void setCentralityOfBetweenness(double centralityOfBetweenness) {
 		this.centralityOfBetweenness = centralityOfBetweenness;
@@ -160,7 +162,8 @@ public class Node {
 	}
 
 	/**
-	 * @param distance the distance to set
+	 * @param distance
+	 *            the distance to set
 	 */
 	public void setDistance(double distance) {
 		this.distance = distance;
@@ -174,7 +177,8 @@ public class Node {
 	}
 
 	/**
-	 * @param predecessors the predecessors to set
+	 * @param predecessors
+	 *            the predecessors to set
 	 */
 	public void setPredecessors(HashSet<Integer> predecessors) {
 		this.predecessors = predecessors;
@@ -188,7 +192,8 @@ public class Node {
 	}
 
 	/**
-	 * @param delta the delta to set
+	 * @param delta
+	 *            the delta to set
 	 */
 	public void setDelta(double delta) {
 		this.delta = delta;

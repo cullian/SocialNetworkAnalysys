@@ -1,5 +1,9 @@
 /**
  * 
+ * A data class to hold data for CentralityGraph class
+ * 
+ * @author William Cullian
+ *
  */
 package graph;
 
@@ -7,30 +11,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 
-//import graph.CentralityData.Pair;
-
-/**
- * @author William
- *
- */
 public class CentralityData implements Data {
-
-//	// pair class to hold 
-//	public class Pair {
-//		int x;
-//		int y;
-//
-//		/**
-//		 * @param x
-//		 * @param y
-//		 */
-//		public Pair(int x, int y) {
-//			super();
-//			this.x = x;
-//			this.y = y;
-//		}
-//
-//	}
 
 	private LinkedList<CentralityGraph> subCommunities;
 	private int highestDegreeNode;
@@ -67,6 +48,8 @@ public class CentralityData implements Data {
 	}
 
 	/**
+	 * Set all nodes edge betweenness(flow) to 0
+	 * 
 	 * @param edgeBetweenness
 	 *            the edgeBetweenness to set
 	 */
@@ -81,7 +64,8 @@ public class CentralityData implements Data {
 	/**
 	 * @param flow
 	 */
-	public void addFlowMatrix(HashMap<Edge, Double> flow, int size) {
+	public void addFlowMatrix(HashMap<Edge, Double> flow) {
+		// for every edge add flows value to edgeBetweenness value
 		for (Edge edge : flow.keySet()) {
 			double edgeVal = edgeBetweenness.get(edge);
 			edgeVal += flow.get(edge);

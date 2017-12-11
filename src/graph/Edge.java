@@ -5,7 +5,7 @@
  * two user nodes(people) in the SocialNetworkGraph Object.  
  * These are directional edges, so a friendship will require two
  * edges.  The Class contains the from node's user number 
- * as well as the to node's user number.
+ * as well as the to node's user number.  Edges are comparable.
  *
  */
 package graph;
@@ -46,7 +46,9 @@ class Edge implements Comparable<Edge> {
 		return source;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -57,8 +59,7 @@ class Edge implements Comparable<Edge> {
 	/**
 	 * compareTo function for comparing edges
 	 * 
-	 * @return 0 of they have the same to and from, else sort by to, 
-	 * 	then from
+	 * @return 0 of they have the same to and from, else sort by to, then from
 	 */
 	/*
 	 * (non-Javadoc)
@@ -86,7 +87,9 @@ class Edge implements Comparable<Edge> {
 		return BEFORE;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
@@ -98,7 +101,9 @@ class Edge implements Comparable<Edge> {
 		return result;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override

@@ -1,11 +1,7 @@
 /**
- * 
- */
-package graph;
-
-/**
- * @author William
+ * @author William Cullian
  *
  */
+package graph;
 public interface Data {
 }

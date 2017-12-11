@@ -3,14 +3,7 @@
  * Egonet is a graph class designed to hold egonets and stats on them
  *  
  */
-/**
- */
 package graph;
-
-import java.util.ArrayDeque;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class EgonetGraph extends SocialNetworkGraph {
 
@@ -31,7 +24,7 @@ public class EgonetGraph extends SocialNetworkGraph {
 	 */
 	@Override
 	public void printStats() {
-		System.out.println("Egonet for user: " + data.getCentralEgoUser());
+		System.out.println("\nEgonet for user: " + data.getCentralEgoUser());
 		System.out.println("Egonet depth: " + data.getEgonetDepth());
 		System.out.println("Average number of friends per person: " + data.getAveNumOfFriendships());
 		super.printStats();
@@ -119,22 +112,25 @@ public class EgonetGraph extends SocialNetworkGraph {
 			ret.addFriend(node.getUserNumber());
 		}
 		// go thru again and add edges
-//		for (Node node : people.values()) {
-//			for (Edge friendship : node.getFriends()) {
-//				ret.addFriendship(friendship.getSource(), friendship.getTarget());
-//			}
-//		}
+		// for (Node node : people.values()) {
+		// for (Edge friendship : node.getFriends()) {
+		// ret.addFriendship(friendship.getSource(), friendship.getTarget());
+		// }
+		// }
 		fillInEdges(ret);
 		ret.setEgonetDepth(data.getEgonetDepth());
 		return ret;
 	}
 
+	/**
+	 * recalculates the average number of friends
+	 */
 	private void recalculateFriendAverage() {
 		if (getNumPeople() < 2) {
 			data.setAveNumOfFriendships(0);
 			return;
 		}
-		data.setAveNumOfFriendships((double)(getNumFriendships() / 2) / (getNumPeople()));
+		data.setAveNumOfFriendships((double) (getNumFriendships() / 2) / (getNumPeople()));
 
 	}
 

@@ -1,6 +1,13 @@
+/**
+ * 
+ * A data class to hold data for EgonetGraph class
+ * 
+ * @author William Cullian
+ *
+ */
 package graph;
 
-public class EgonetData implements Data{
+public class EgonetData implements Data {
 	// fields for egonet info
 	private int centralEgoUser;
 	private int egonetDepth;
@@ -24,7 +31,8 @@ public class EgonetData implements Data{
 	}
 
 	/**
-	 * @param centralEgoUser the centralEgoUser to set
+	 * @param centralEgoUser
+	 *            the centralEgoUser to set
 	 */
 	public void setCentralEgoUser(int centralEgoUser) {
 		this.centralEgoUser = centralEgoUser;
@@ -38,7 +46,8 @@ public class EgonetData implements Data{
 	}
 
 	/**
-	 * @param egonetDepth the egonetDepth to set
+	 * @param egonetDepth
+	 *            the egonetDepth to set
 	 */
 	public void setEgonetDepth(int egonetDepth) {
 		this.egonetDepth = egonetDepth;
@@ -52,7 +61,8 @@ public class EgonetData implements Data{
 	}
 
 	/**
-	 * @param aveNumOfFriendships the aveNumOfFriendships to set
+	 * @param aveNumOfFriendships
+	 *            the aveNumOfFriendships to set
 	 */
 	public void setAveNumOfFriendships(double aveNumOfFriendships) {
 		this.aveNumOfFriendships = aveNumOfFriendships;

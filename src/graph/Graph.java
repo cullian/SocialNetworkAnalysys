@@ -1,3 +1,11 @@
+/**
+ * Abstract graph interface provides the basic methods for
+ * creating, printing and exporting a graph
+ * 
+ * @author William Cullian
+ *
+ */
+
 package graph;
 
 import java.util.HashMap;
@@ -20,6 +28,4 @@ public interface Graph {
 	public HashMap<Integer, HashSet<Integer>> exportGraph();
 
 	public void printGraph();
-
-	public Set<Integer> getPeopleNums();
 }

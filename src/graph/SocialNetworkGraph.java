@@ -16,7 +16,6 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Queue;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -65,7 +64,6 @@ public class SocialNetworkGraph implements Graph {
 	 * 
 	 * @return The vertices in this graph as a set of integers
 	 */
-	@Override
 	public Set<Integer> getPeopleNums() {
 		return people.keySet();
 	}
@@ -80,6 +78,8 @@ public class SocialNetworkGraph implements Graph {
 	}
 
 	/**
+	 * Get a single user node
+	 * 
 	 * @param i
 	 */
 	public Node getPerson(int userNumber) {
@@ -100,17 +100,6 @@ public class SocialNetworkGraph implements Graph {
 	 * 
 	 */
 	public void decreaseEdgeCount() {
-		numEdges--;
-	}
-
-	/**
-	 * @param i
-	 * @param j
-	 */
-	private void removeEdge(int i, int j) {
-		getPerson(i).removeEdge(i, j);
-		numEdges--;
-		getPerson(j).removeEdge(j, i);
 		numEdges--;
 	}
 
@@ -200,6 +189,9 @@ public class SocialNetworkGraph implements Graph {
 
 	}
 
+	/**
+	 * @return the graph density
+	 */
 	public double getDensity() {
 		if (numPeople < 2) {
 			return 0.0;
@@ -235,6 +227,9 @@ public class SocialNetworkGraph implements Graph {
 		return ret;
 	}
 
+	/**
+	 * @return degree distribution
+	 */
 	public TreeMap<Integer, Integer> getDegreeDistribution() {
 		TreeMap<Integer, Integer> dd = new TreeMap<>();
 		for (Node user : people.values()) {
@@ -283,7 +278,7 @@ public class SocialNetworkGraph implements Graph {
 		// generate return list of egonets to depth depth, for user
 		List<Graph> egonets = this.getEgonets(user, depth);
 		// print stats
-		System.out.println("\nPRINT EGONETS OF " + user + " TO DEPTH " + depth + " ---------------\n");
+		System.out.println("\nEgonets for " + user + " to depth " + depth);
 		for (Graph graph : egonets) {
 			((EgonetGraph) graph).printStats();
 			System.out.println();
@@ -303,6 +298,8 @@ public class SocialNetworkGraph implements Graph {
 	 * 
 	 * @param centerUser
 	 *            The starting point of the egonet
+	 * @param depth
+	 *            The depth of the egonet
 	 * @return a subgraph of the egonet for center
 	 */
 	/*
@@ -422,7 +419,7 @@ public class SocialNetworkGraph implements Graph {
 		// create stack of user numbers(integers) to visit
 		ArrayDeque<Integer> finished = new ArrayDeque<Integer>();
 
-		Graph scc = new SocialNetworkGraph();
+		SocialNetworkGraph scc = new SocialNetworkGraph();
 		// while there are still users to visit
 		while (!vertices.isEmpty()) {
 			int v = vertices.pop();
@@ -483,7 +480,7 @@ public class SocialNetworkGraph implements Graph {
 	 * @param graph:
 	 *            a graph with nodes only
 	 */
-	protected void fillInEdges(Graph graph) {
+	protected void fillInEdges(SocialNetworkGraph graph) {
 		// for each node in egonet
 		for (Integer node : graph.getPeopleNums()) {
 			// for each edge in each node in parent graph
@@ -505,18 +502,19 @@ public class SocialNetworkGraph implements Graph {
 		// create a centrality graph for analysis
 		CentralityGraph centralityGraph = new CentralityGraph(this);
 		// print stats for graph
+		System.out.println("\nInitial Graph:");
 		centralityGraph.printStats();
 		// print list of initial sub communities in graph
 		LinkedList<CentralityGraph> subCommunities = centralityGraph.findIsolatedCommunities();
+		// compute betweenness to get stats for all communities
+		for (CentralityGraph sc : subCommunities) {
+			sc.computeBetweenness();
+		}
+		System.out.println("\nInitial communities:");
 		centralityGraph.printCommunityStats(subCommunities);
 		// remove communities larger than maxSize from subCommunities
 		// and put in stack
 		ArrayDeque<CentralityGraph> largeCommunities = centralityGraph.extractLargeCommunities(subCommunities, maxSize);
-		// compute betweenness for all small communities
-		// TODO compute betweenness and make sure stats are in variables
-		for (CentralityGraph smallSubCommunity : subCommunities) {
-			smallSubCommunity.computeBetweenness();
-		}
 		// break down large communities
 		while (!largeCommunities.isEmpty()) {
 			// pop one
@@ -524,83 +522,88 @@ public class SocialNetworkGraph implements Graph {
 			// break link
 			currCommunity.breakStrongestLink();
 			// check if it split into two communities
-			LinkedList<CentralityGraph> sc = currCommunity.findIsolatedCommunities();
-			if (sc.size() > 1) {
-				// remove any larger than maxSize
-				ArrayDeque<CentralityGraph> lc = currCommunity.extractLargeCommunities(sc, maxSize);
-				// add them to stack
-				largeCommunities.addAll(lc);
+			LinkedList<CentralityGraph> subComm = currCommunity.findIsolatedCommunities();
+			// compute betweenness to get stats for all communities
+			for (CentralityGraph subGraph : subComm) {
+				subGraph.computeBetweenness();
 			}
+			// remove any larger than maxSize
+			ArrayDeque<CentralityGraph> lc = currCommunity.extractLargeCommunities(subComm, maxSize);
+			// add them to stack
+			largeCommunities.addAll(lc);
 			// put small ones in list
-			subCommunities.addAll(sc);
+			subCommunities.addAll(subComm);
 		}
 		// TODO put subcommunities in data
 		centralityGraph.addSubCommunities(subCommunities);
+		System.out.println("\nFinal breakdown of communities smaller than " + maxSize + ":");
 		centralityGraph.printCommunityStats(subCommunities);
 
 	}
 
 	public static void testing() {
 		SocialNetworkGraph test = new SocialNetworkGraph();
-		SocialNetworkGraph test2 = new SocialNetworkGraph();
-		GraphLoader.loadGraph(test, "data/test4.txt");
-		GraphLoader.loadGraph(test2, "data/test5.txt");
-		test2.addFriend(0);
-		test2.addFriend(25);
-//		test.printStats();
-//		test.printGraph();
-//		System.out.println("\nRemove edge from 3 to 4-------------");
-//		test.removeEdge(3, 4);
-//		test.printStats();
-//		test.printGraph();
-		 test2.analyzeCommunities(9);
+		// SocialNetworkGraph test2 = new SocialNetworkGraph();
+		// SocialNetworkGraph test3 = new SocialNetworkGraph();
+		GraphLoader.loadGraph(test, "data/facebook_2000.txt");
+		// GraphLoader.loadGraph(test2, "data/test5.txt");
+		// GraphLoader.loadGraph(test3, "data/test6.txt");
+		// test2.addFriend(0);
+		// test2.addFriend(25);
+		// test.printStats();
+		// test.printGraph();
+		// System.out.println("\nRemove edge from 3 to 4-------------");
+		// test.removeEdge(3, 4);
+		// test.printStats();
+		// test.printGraph();
+		test.analyzeCommunities(1000);
 
 	}
 
 	public static void main(String[] args) {
 		testing();
 
-//		 System.out.print("Making new maps...");
-//		 SocialNetworkGraph soloEgo = new SocialNetworkGraph();
-//		 SocialNetworkGraph sparse = new SocialNetworkGraph();
-//		 SocialNetworkGraph medium = new SocialNetworkGraph();
-//		 SocialNetworkGraph full = new SocialNetworkGraph();
-//		 SocialNetworkGraph facebook = new SocialNetworkGraph();
-//		 System.out.print("DONE. \nLoading the maps...");
-//		 GraphLoader.loadGraph(sparse, "data/small_test_graph.txt");
-//		 GraphLoader.loadGraph(medium, "data/test2.txt");
-//		 GraphLoader.loadGraph(full, "data/test3.txt");
-//		 GraphLoader.loadGraph(facebook, "data/facebook_ucsd.txt");
-//		 soloEgo.addFriend(1);
-//		 System.out.println("DONE.");
-//		 System.out.println("PRINT GRAPH SOLO---------------------");
-//		 soloEgo.printGraph();
-//		 System.out.println("PRINT GRAPH SPARSE---------------------");
-//		 sparse.printGraph();
-//		 System.out.println("PRINT GRAPH MEDIUM---------------------");
-//		 medium.printGraph();
-//		 System.out.println("PRINT GRAPH FULL---------------------");
-//		 full.printGraph();
-//		 System.out.println("PRINT GRAPH FACEBOOK DATA---------------------");
-//		 facebook.printGraph();
-//		 System.out.println("TEST MAP 1 SOLO ---------------------");
-//		 soloEgo.evaluateEgonets(1, 3);
-//		 soloEgo.evaluateEgonets(10, 3);
-//		 System.out.println("TEST MAP 2 SPARSE ---------------------");
-//		 sparse.evaluateEgonets(1, 3);
-//		 sparse.evaluateEgonets(7, 3);
-//		 System.out.println("TEST MAP 3 MEDIUM ---------------------");
-//		 medium.evaluateEgonets(1, 3);
-//		 medium.evaluateEgonets(7, 3);
-//		 System.out.println("TEST MAP 4 FULL ---------------------");
-//		 full.evaluateEgonets(1, 3);
-//		 full.evaluateEgonets(4, 3);
-//		 System.out.println("FACEBOOK UCSD DATA---------------------");
-//		 facebook.evaluateEgonets(0, 3);
-//		 facebook.evaluateEgonets(1, 3);
-//		 facebook.evaluateEgonets(7, 3);
-//		 facebook.evaluateEgonets(94, 3);
-//		 facebook.evaluateEgonets(14945, 3);
+		// System.out.print("Making new maps...");
+		// SocialNetworkGraph soloEgo = new SocialNetworkGraph();
+		// SocialNetworkGraph sparse = new SocialNetworkGraph();
+		// SocialNetworkGraph medium = new SocialNetworkGraph();
+		// SocialNetworkGraph full = new SocialNetworkGraph();
+		// SocialNetworkGraph facebook = new SocialNetworkGraph();
+		// System.out.print("DONE. \nLoading the maps...");
+		// GraphLoader.loadGraph(sparse, "data/small_test_graph.txt");
+		// GraphLoader.loadGraph(medium, "data/test2.txt");
+		// GraphLoader.loadGraph(full, "data/test3.txt");
+		// GraphLoader.loadGraph(facebook, "data/facebook_ucsd.txt");
+		// soloEgo.addFriend(1);
+		// System.out.println("DONE.");
+		// System.out.println("PRINT GRAPH SOLO---------------------");
+		// soloEgo.printGraph();
+		// System.out.println("PRINT GRAPH SPARSE---------------------");
+		// sparse.printGraph();
+		// System.out.println("PRINT GRAPH MEDIUM---------------------");
+		// medium.printGraph();
+		// System.out.println("PRINT GRAPH FULL---------------------");
+		// full.printGraph();
+		// System.out.println("PRINT GRAPH FACEBOOK DATA---------------------");
+		// facebook.printGraph();
+		// System.out.println("TEST MAP 1 SOLO ---------------------");
+		// soloEgo.evaluateEgonets(1, 3);
+		// soloEgo.evaluateEgonets(10, 3);
+		// System.out.println("TEST MAP 2 SPARSE ---------------------");
+		// sparse.evaluateEgonets(1, 3);
+		// sparse.evaluateEgonets(7, 3);
+		// System.out.println("TEST MAP 3 MEDIUM ---------------------");
+		// medium.evaluateEgonets(1, 3);
+		// medium.evaluateEgonets(7, 3);
+		// System.out.println("TEST MAP 4 FULL ---------------------");
+		// full.evaluateEgonets(1, 3);
+		// full.evaluateEgonets(4, 3);
+		// System.out.println("FACEBOOK UCSD DATA---------------------");
+		// facebook.evaluateEgonets(0, 3);
+		// facebook.evaluateEgonets(1, 3);
+		// facebook.evaluateEgonets(7, 3);
+		// facebook.evaluateEgonets(94, 3);
+		// facebook.evaluateEgonets(14945, 3);
 
 	}
 
