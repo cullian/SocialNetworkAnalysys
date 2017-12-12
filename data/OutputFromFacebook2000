@@ -1,0 +1,3094 @@
+
+Initial Graph:
+Number of people in graph: 1780
+Number of friendships in graph: 7825
+Maximum possible number of friendships in graph: 1583310
+Density of graph(num edges/ max num edges): 0.004942178095256141
+Degree Distribution:
+Number of users with degree 1: 198
+Number of users with degree 2: 147
+Number of users with degree 3: 142
+Number of users with degree 4: 142
+Number of users with degree 5: 114
+Number of users with degree 6: 101
+Number of users with degree 7: 103
+Number of users with degree 8: 101
+Number of users with degree 9: 90
+Number of users with degree 10: 81
+Number of users with degree 11: 67
+Number of users with degree 12: 78
+Number of users with degree 13: 59
+Number of users with degree 14: 45
+Number of users with degree 15: 45
+Number of users with degree 16: 31
+Number of users with degree 17: 22
+Number of users with degree 18: 35
+Number of users with degree 19: 19
+Number of users with degree 20: 17
+Number of users with degree 21: 23
+Number of users with degree 22: 21
+Number of users with degree 23: 11
+Number of users with degree 24: 12
+Number of users with degree 25: 6
+Number of users with degree 26: 9
+Number of users with degree 27: 9
+Number of users with degree 28: 9
+Number of users with degree 29: 1
+Number of users with degree 30: 5
+Number of users with degree 31: 3
+Number of users with degree 33: 5
+Number of users with degree 34: 6
+Number of users with degree 35: 5
+Number of users with degree 36: 4
+Number of users with degree 37: 3
+Number of users with degree 38: 1
+Number of users with degree 39: 5
+Number of users with degree 40: 1
+Number of users with degree 43: 1
+Number of users with degree 44: 2
+Number of users with degree 53: 1
+Degree with most users: 198 users with degree 1
+
+Initial communities:
+
+Number of sub-communities in this graph: 13
+
+Community #1
+Number of people: 1755
+Number of friendships 7812
+Edge with highest flow Edge [from=177, to=908]
+Node with highest centrality 177
+
+Egonets for 177 to depth 1
+
+Egonet for user: 177
+Egonet depth: 1
+Average number of friends per person: 0.7307692307692307
+Number of people in graph: 26
+Number of friendships in graph: 39
+Maximum possible number of friendships in graph: 325
+Density of graph(num edges/ max num edges): 0.12
+Degree Distribution:
+Number of users with degree 1: 8
+Number of users with degree 2: 7
+Number of users with degree 3: 9
+Number of users with degree 4: 1
+Number of users with degree 25: 1
+Degree with most users: 9 users with degree 3
+
+Node with highest degree 1382
+
+Egonets for 1382 to depth 1
+
+Egonet for user: 1382
+Egonet depth: 1
+Average number of friends per person: 1.1481481481481481
+Number of people in graph: 54
+Number of friendships in graph: 124
+Maximum possible number of friendships in graph: 1431
+Density of graph(num edges/ max num edges): 0.08665269042627533
+Degree Distribution:
+Number of users with degree 1: 9
+Number of users with degree 2: 13
+Number of users with degree 3: 8
+Number of users with degree 4: 6
+Number of users with degree 5: 9
+Number of users with degree 6: 2
+Number of users with degree 7: 3
+Number of users with degree 10: 1
+Number of users with degree 12: 2
+Number of users with degree 53: 1
+Degree with most users: 13 users with degree 2
+
+Community #2
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1020, to=1857]
+Node with highest centrality 1857
+
+Egonets for 1857 to depth 1
+
+Egonet for user: 1857
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1857
+
+Egonets for 1857 to depth 1
+
+Egonet for user: 1857
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #3
+Number of people: 3
+Number of friendships 2
+Edge with highest flow Edge [from=667, to=62]
+Node with highest centrality 1829
+
+Egonets for 1829 to depth 1
+
+Egonet for user: 1829
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 667
+
+Egonets for 667 to depth 1
+
+Egonet for user: 667
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 2
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 1
+Degree with most users: 2 users with degree 1
+
+Community #4
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1785, to=1247]
+Node with highest centrality 1785
+
+Egonets for 1785 to depth 1
+
+Egonet for user: 1785
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1785
+
+Egonets for 1785 to depth 1
+
+Egonet for user: 1785
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #5
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=155, to=1775]
+Node with highest centrality 155
+
+Egonets for 155 to depth 1
+
+Egonet for user: 155
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 155
+
+Egonets for 155 to depth 1
+
+Egonet for user: 155
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #6
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1472, to=216]
+Node with highest centrality 1472
+
+Egonets for 1472 to depth 1
+
+Egonet for user: 1472
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1472
+
+Egonets for 1472 to depth 1
+
+Egonet for user: 1472
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #7
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=894, to=1456]
+Node with highest centrality 1456
+
+Egonets for 1456 to depth 1
+
+Egonet for user: 1456
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1456
+
+Egonets for 1456 to depth 1
+
+Egonet for user: 1456
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #8
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1397, to=1188]
+Node with highest centrality 1188
+
+Egonets for 1188 to depth 1
+
+Egonet for user: 1188
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1188
+
+Egonets for 1188 to depth 1
+
+Egonet for user: 1188
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #9
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1381, to=1291]
+Node with highest centrality 1381
+
+Egonets for 1381 to depth 1
+
+Egonet for user: 1381
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1381
+
+Egonets for 1381 to depth 1
+
+Egonet for user: 1381
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #10
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1321, to=251]
+Node with highest centrality 1321
+
+Egonets for 1321 to depth 1
+
+Egonet for user: 1321
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1321
+
+Egonets for 1321 to depth 1
+
+Egonet for user: 1321
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #11
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1000, to=570]
+Node with highest centrality 1000
+
+Egonets for 1000 to depth 1
+
+Egonet for user: 1000
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1000
+
+Egonets for 1000 to depth 1
+
+Egonet for user: 1000
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #12
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=568, to=367]
+Node with highest centrality 568
+
+Egonets for 568 to depth 1
+
+Egonet for user: 568
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 568
+
+Egonets for 568 to depth 1
+
+Egonet for user: 568
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #13
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=198, to=410]
+Node with highest centrality 198
+
+Egonets for 198 to depth 1
+
+Egonet for user: 198
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 198
+
+Egonets for 198 to depth 1
+
+Egonet for user: 198
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+
+Final breakdown of communities smaller than 1000:
+
+Number of sub-communities in this graph: 68
+
+Community #1
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1020, to=1857]
+Node with highest centrality 1857
+
+Egonets for 1857 to depth 1
+
+Egonet for user: 1857
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1857
+
+Egonets for 1857 to depth 1
+
+Egonet for user: 1857
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #2
+Number of people: 3
+Number of friendships 2
+Edge with highest flow Edge [from=667, to=62]
+Node with highest centrality 1829
+
+Egonets for 1829 to depth 1
+
+Egonet for user: 1829
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 667
+
+Egonets for 667 to depth 1
+
+Egonet for user: 667
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 2
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 1
+Degree with most users: 2 users with degree 1
+
+Community #3
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1785, to=1247]
+Node with highest centrality 1785
+
+Egonets for 1785 to depth 1
+
+Egonet for user: 1785
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1785
+
+Egonets for 1785 to depth 1
+
+Egonet for user: 1785
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #4
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=155, to=1775]
+Node with highest centrality 155
+
+Egonets for 155 to depth 1
+
+Egonet for user: 155
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 155
+
+Egonets for 155 to depth 1
+
+Egonet for user: 155
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #5
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1472, to=216]
+Node with highest centrality 1472
+
+Egonets for 1472 to depth 1
+
+Egonet for user: 1472
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1472
+
+Egonets for 1472 to depth 1
+
+Egonet for user: 1472
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #6
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=894, to=1456]
+Node with highest centrality 1456
+
+Egonets for 1456 to depth 1
+
+Egonet for user: 1456
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1456
+
+Egonets for 1456 to depth 1
+
+Egonet for user: 1456
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #7
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1397, to=1188]
+Node with highest centrality 1188
+
+Egonets for 1188 to depth 1
+
+Egonet for user: 1188
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1188
+
+Egonets for 1188 to depth 1
+
+Egonet for user: 1188
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #8
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1381, to=1291]
+Node with highest centrality 1381
+
+Egonets for 1381 to depth 1
+
+Egonet for user: 1381
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1381
+
+Egonets for 1381 to depth 1
+
+Egonet for user: 1381
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #9
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1321, to=251]
+Node with highest centrality 1321
+
+Egonets for 1321 to depth 1
+
+Egonet for user: 1321
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1321
+
+Egonets for 1321 to depth 1
+
+Egonet for user: 1321
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #10
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1000, to=570]
+Node with highest centrality 1000
+
+Egonets for 1000 to depth 1
+
+Egonet for user: 1000
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1000
+
+Egonets for 1000 to depth 1
+
+Egonet for user: 1000
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #11
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=568, to=367]
+Node with highest centrality 568
+
+Egonets for 568 to depth 1
+
+Egonet for user: 568
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 568
+
+Egonets for 568 to depth 1
+
+Egonet for user: 568
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #12
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=198, to=410]
+Node with highest centrality 198
+
+Egonets for 198 to depth 1
+
+Egonet for user: 198
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 198
+
+Egonets for 198 to depth 1
+
+Egonet for user: 198
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #13
+Number of people: 11
+Number of friendships 14
+Edge with highest flow Edge [from=908, to=1999]
+Node with highest centrality 211
+
+Egonets for 211 to depth 1
+
+Egonet for user: 211
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1999
+
+Egonets for 1999 to depth 1
+
+Egonet for user: 1999
+Egonet depth: 1
+Average number of friends per person: 0.6363636363636364
+Number of people in graph: 11
+Number of friendships in graph: 14
+Maximum possible number of friendships in graph: 55
+Density of graph(num edges/ max num edges): 0.2545454545454545
+Degree Distribution:
+Number of users with degree 1: 4
+Number of users with degree 2: 4
+Number of users with degree 3: 2
+Number of users with degree 10: 1
+Degree with most users: 4 users with degree 1
+
+Community #14
+Number of people: 70
+Number of friendships 144
+Edge with highest flow Edge [from=1691, to=379]
+Node with highest centrality 1998
+
+Egonets for 1998 to depth 1
+
+Egonet for user: 1998
+Egonet depth: 1
+Average number of friends per person: 0.9777777777777777
+Number of people in graph: 45
+Number of friendships in graph: 88
+Maximum possible number of friendships in graph: 990
+Density of graph(num edges/ max num edges): 0.08888888888888889
+Degree Distribution:
+Number of users with degree 1: 14
+Number of users with degree 2: 8
+Number of users with degree 3: 9
+Number of users with degree 4: 5
+Number of users with degree 5: 2
+Number of users with degree 6: 3
+Number of users with degree 8: 1
+Number of users with degree 9: 1
+Number of users with degree 10: 1
+Number of users with degree 44: 1
+Degree with most users: 14 users with degree 1
+
+Node with highest degree 1998
+
+Egonets for 1998 to depth 1
+
+Egonet for user: 1998
+Egonet depth: 1
+Average number of friends per person: 0.9777777777777777
+Number of people in graph: 45
+Number of friendships in graph: 88
+Maximum possible number of friendships in graph: 990
+Density of graph(num edges/ max num edges): 0.08888888888888889
+Degree Distribution:
+Number of users with degree 1: 14
+Number of users with degree 2: 8
+Number of users with degree 3: 9
+Number of users with degree 4: 5
+Number of users with degree 5: 2
+Number of users with degree 6: 3
+Number of users with degree 8: 1
+Number of users with degree 9: 1
+Number of users with degree 10: 1
+Number of users with degree 44: 1
+Degree with most users: 14 users with degree 1
+
+Community #15
+Number of people: 5
+Number of friendships 4
+Edge with highest flow Edge [from=1997, to=992]
+Node with highest centrality 177
+
+Egonets for 177 to depth 1
+
+Egonet for user: 177
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 2
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 1
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1997
+
+Egonets for 1997 to depth 1
+
+Egonet for user: 1997
+Egonet depth: 1
+Average number of friends per person: 0.25
+Number of people in graph: 4
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 3: 1
+Degree with most users: 3 users with degree 1
+
+Community #16
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1996, to=1740]
+Node with highest centrality 1996
+
+Egonets for 1996 to depth 1
+
+Egonet for user: 1996
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1996
+
+Egonets for 1996 to depth 1
+
+Egonet for user: 1996
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #17
+Number of people: 13
+Number of friendships 16
+Edge with highest flow Edge [from=1995, to=1647]
+Node with highest centrality 757
+
+Egonets for 757 to depth 1
+
+Egonet for user: 757
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 2: 3
+Degree with most users: 3 users with degree 2
+
+Node with highest degree 1995
+
+Egonets for 1995 to depth 1
+
+Egonet for user: 1995
+Egonet depth: 1
+Average number of friends per person: 0.5833333333333334
+Number of people in graph: 12
+Number of friendships in graph: 14
+Maximum possible number of friendships in graph: 66
+Density of graph(num edges/ max num edges): 0.21212121212121213
+Degree Distribution:
+Number of users with degree 1: 7
+Number of users with degree 2: 3
+Number of users with degree 4: 1
+Number of users with degree 11: 1
+Degree with most users: 7 users with degree 1
+
+Community #18
+Number of people: 10
+Number of friendships 10
+Edge with highest flow Edge [from=1994, to=726]
+Node with highest centrality 1597
+
+Egonets for 1597 to depth 1
+
+Egonet for user: 1597
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1994
+
+Egonets for 1994 to depth 1
+
+Egonet for user: 1994
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 8
+Number of friendships in graph: 8
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.2857142857142857
+Degree Distribution:
+Number of users with degree 1: 5
+Number of users with degree 2: 2
+Number of users with degree 7: 1
+Degree with most users: 5 users with degree 1
+
+Community #19
+Number of people: 24
+Number of friendships 35
+Edge with highest flow Edge [from=1082, to=1993]
+Node with highest centrality 1082
+
+Egonets for 1082 to depth 1
+
+Egonet for user: 1082
+Egonet depth: 1
+Average number of friends per person: 0.4
+Number of people in graph: 5
+Number of friendships in graph: 5
+Maximum possible number of friendships in graph: 10
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 2
+Number of users with degree 4: 1
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1993
+
+Egonets for 1993 to depth 1
+
+Egonet for user: 1993
+Egonet depth: 1
+Average number of friends per person: 0.6842105263157895
+Number of people in graph: 19
+Number of friendships in graph: 27
+Maximum possible number of friendships in graph: 171
+Density of graph(num edges/ max num edges): 0.15789473684210525
+Degree Distribution:
+Number of users with degree 1: 7
+Number of users with degree 2: 6
+Number of users with degree 3: 3
+Number of users with degree 4: 2
+Number of users with degree 18: 1
+Degree with most users: 7 users with degree 1
+
+Community #20
+Number of people: 14
+Number of friendships 14
+Edge with highest flow Edge [from=1992, to=455]
+Node with highest centrality 1979
+
+Egonets for 1979 to depth 1
+
+Egonet for user: 1979
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1992
+
+Egonets for 1992 to depth 1
+
+Egonet for user: 1992
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 12
+Number of friendships in graph: 12
+Maximum possible number of friendships in graph: 66
+Density of graph(num edges/ max num edges): 0.18181818181818182
+Degree Distribution:
+Number of users with degree 1: 9
+Number of users with degree 2: 2
+Number of users with degree 11: 1
+Degree with most users: 9 users with degree 1
+
+Community #21
+Number of people: 12
+Number of friendships 13
+Edge with highest flow Edge [from=1990, to=1605]
+Node with highest centrality 1924
+
+Egonets for 1924 to depth 1
+
+Egonet for user: 1924
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1990
+
+Egonets for 1990 to depth 1
+
+Egonet for user: 1990
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 12
+Number of friendships in graph: 13
+Maximum possible number of friendships in graph: 66
+Density of graph(num edges/ max num edges): 0.19696969696969696
+Degree Distribution:
+Number of users with degree 1: 7
+Number of users with degree 2: 4
+Number of users with degree 11: 1
+Degree with most users: 7 users with degree 1
+
+Community #22
+Number of people: 9
+Number of friendships 9
+Edge with highest flow Edge [from=1988, to=1902]
+Node with highest centrality 1902
+
+Egonets for 1902 to depth 1
+
+Egonet for user: 1902
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 4
+Number of friendships in graph: 4
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 2
+Number of users with degree 3: 1
+Degree with most users: 2 users with degree 2
+
+Node with highest degree 1988
+
+Egonets for 1988 to depth 1
+
+Egonet for user: 1988
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 8
+Number of friendships in graph: 8
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.2857142857142857
+Degree Distribution:
+Number of users with degree 1: 5
+Number of users with degree 2: 2
+Number of users with degree 7: 1
+Degree with most users: 5 users with degree 1
+
+Community #23
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1987, to=1974]
+Node with highest centrality 1987
+
+Egonets for 1987 to depth 1
+
+Egonet for user: 1987
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1987
+
+Egonets for 1987 to depth 1
+
+Egonet for user: 1987
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #24
+Number of people: 25
+Number of friendships 71
+Edge with highest flow Edge [from=1942, to=1178]
+Node with highest centrality 1840
+
+Egonets for 1840 to depth 1
+
+Egonet for user: 1840
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1986
+
+Egonets for 1986 to depth 1
+
+Egonet for user: 1986
+Egonet depth: 1
+Average number of friends per person: 1.5
+Number of people in graph: 16
+Number of friendships in graph: 48
+Maximum possible number of friendships in graph: 120
+Density of graph(num edges/ max num edges): 0.4
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 1
+Number of users with degree 4: 2
+Number of users with degree 5: 2
+Number of users with degree 6: 2
+Number of users with degree 7: 2
+Number of users with degree 8: 3
+Number of users with degree 9: 1
+Number of users with degree 15: 1
+Degree with most users: 3 users with degree 8
+
+Community #25
+Number of people: 4
+Number of friendships 5
+Edge with highest flow Edge [from=274, to=1505]
+Node with highest centrality 1984
+
+Egonets for 1984 to depth 1
+
+Egonet for user: 1984
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 4
+Number of friendships in graph: 5
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.8333333333333334
+Degree Distribution:
+Number of users with degree 2: 2
+Number of users with degree 3: 2
+Degree with most users: 2 users with degree 2
+
+Node with highest degree 1984
+
+Egonets for 1984 to depth 1
+
+Egonet for user: 1984
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 4
+Number of friendships in graph: 5
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.8333333333333334
+Degree Distribution:
+Number of users with degree 2: 2
+Number of users with degree 3: 2
+Degree with most users: 2 users with degree 2
+
+Community #26
+Number of people: 13
+Number of friendships 15
+Edge with highest flow Edge [from=1592, to=1983]
+Node with highest centrality 1983
+
+Egonets for 1983 to depth 1
+
+Egonet for user: 1983
+Egonet depth: 1
+Average number of friends per person: 0.6
+Number of people in graph: 10
+Number of friendships in graph: 12
+Maximum possible number of friendships in graph: 45
+Density of graph(num edges/ max num edges): 0.26666666666666666
+Degree Distribution:
+Number of users with degree 1: 6
+Number of users with degree 3: 3
+Number of users with degree 9: 1
+Degree with most users: 6 users with degree 1
+
+Node with highest degree 1983
+
+Egonets for 1983 to depth 1
+
+Egonet for user: 1983
+Egonet depth: 1
+Average number of friends per person: 0.6
+Number of people in graph: 10
+Number of friendships in graph: 12
+Maximum possible number of friendships in graph: 45
+Density of graph(num edges/ max num edges): 0.26666666666666666
+Degree Distribution:
+Number of users with degree 1: 6
+Number of users with degree 3: 3
+Number of users with degree 9: 1
+Degree with most users: 6 users with degree 1
+
+Community #27
+Number of people: 12
+Number of friendships 22
+Edge with highest flow Edge [from=1250, to=907]
+Node with highest centrality 907
+
+Egonets for 907 to depth 1
+
+Egonet for user: 907
+Egonet depth: 1
+Average number of friends per person: 0.8333333333333334
+Number of people in graph: 6
+Number of friendships in graph: 11
+Maximum possible number of friendships in graph: 15
+Density of graph(num edges/ max num edges): 0.7333333333333333
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 4: 4
+Number of users with degree 5: 1
+Degree with most users: 4 users with degree 4
+
+Node with highest degree 1982
+
+Egonets for 1982 to depth 1
+
+Egonet for user: 1982
+Egonet depth: 1
+Average number of friends per person: 1.0
+Number of people in graph: 8
+Number of friendships in graph: 17
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.6071428571428571
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 3: 2
+Number of users with degree 4: 2
+Number of users with degree 6: 2
+Number of users with degree 7: 1
+Degree with most users: 2 users with degree 3
+
+Community #28
+Number of people: 6
+Number of friendships 8
+Edge with highest flow Edge [from=1428, to=278]
+Node with highest centrality 1428
+
+Egonets for 1428 to depth 1
+
+Egonet for user: 1428
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 2: 3
+Degree with most users: 3 users with degree 2
+
+Node with highest degree 1981
+
+Egonets for 1981 to depth 1
+
+Egonet for user: 1981
+Egonet depth: 1
+Average number of friends per person: 0.6666666666666666
+Number of people in graph: 6
+Number of friendships in graph: 8
+Maximum possible number of friendships in graph: 15
+Density of graph(num edges/ max num edges): 0.5333333333333333
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 3
+Number of users with degree 4: 1
+Number of users with degree 5: 1
+Degree with most users: 3 users with degree 2
+
+Community #29
+Number of people: 9
+Number of friendships 20
+Edge with highest flow Edge [from=1333, to=1980]
+Node with highest centrality 1980
+
+Egonets for 1980 to depth 1
+
+Egonet for user: 1980
+Egonet depth: 1
+Average number of friends per person: 1.1428571428571428
+Number of people in graph: 7
+Number of friendships in graph: 16
+Maximum possible number of friendships in graph: 21
+Density of graph(num edges/ max num edges): 0.7619047619047619
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 5: 5
+Number of users with degree 6: 1
+Degree with most users: 5 users with degree 5
+
+Node with highest degree 1183
+
+Egonets for 1183 to depth 1
+
+Egonet for user: 1183
+Egonet depth: 1
+Average number of friends per person: 1.125
+Number of people in graph: 8
+Number of friendships in graph: 19
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.6785714285714286
+Degree Distribution:
+Number of users with degree 2: 2
+Number of users with degree 5: 3
+Number of users with degree 6: 2
+Number of users with degree 7: 1
+Degree with most users: 3 users with degree 5
+
+Community #30
+Number of people: 23
+Number of friendships 40
+Edge with highest flow Edge [from=1132, to=1978]
+Node with highest centrality 1978
+
+Egonets for 1978 to depth 1
+
+Egonet for user: 1978
+Egonet depth: 1
+Average number of friends per person: 1.0
+Number of people in graph: 17
+Number of friendships in graph: 34
+Maximum possible number of friendships in graph: 136
+Density of graph(num edges/ max num edges): 0.25
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 2: 5
+Number of users with degree 3: 2
+Number of users with degree 4: 2
+Number of users with degree 5: 1
+Number of users with degree 6: 1
+Number of users with degree 7: 2
+Number of users with degree 16: 1
+Degree with most users: 5 users with degree 2
+
+Node with highest degree 1978
+
+Egonets for 1978 to depth 1
+
+Egonet for user: 1978
+Egonet depth: 1
+Average number of friends per person: 1.0
+Number of people in graph: 17
+Number of friendships in graph: 34
+Maximum possible number of friendships in graph: 136
+Density of graph(num edges/ max num edges): 0.25
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 2: 5
+Number of users with degree 3: 2
+Number of users with degree 4: 2
+Number of users with degree 5: 1
+Number of users with degree 6: 1
+Number of users with degree 7: 2
+Number of users with degree 16: 1
+Degree with most users: 5 users with degree 2
+
+Community #31
+Number of people: 17
+Number of friendships 43
+Edge with highest flow Edge [from=1389, to=1038]
+Node with highest centrality 1389
+
+Egonets for 1389 to depth 1
+
+Egonet for user: 1389
+Egonet depth: 1
+Average number of friends per person: 1.375
+Number of people in graph: 8
+Number of friendships in graph: 22
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.7857142857142857
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 6: 6
+Number of users with degree 7: 1
+Degree with most users: 6 users with degree 6
+
+Node with highest degree 1977
+
+Egonets for 1977 to depth 1
+
+Egonet for user: 1977
+Egonet depth: 1
+Average number of friends per person: 1.1666666666666667
+Number of people in graph: 12
+Number of friendships in graph: 28
+Maximum possible number of friendships in graph: 66
+Density of graph(num edges/ max num edges): 0.42424242424242425
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 2
+Number of users with degree 3: 2
+Number of users with degree 5: 2
+Number of users with degree 6: 4
+Number of users with degree 11: 1
+Degree with most users: 4 users with degree 6
+
+Community #32
+Number of people: 5
+Number of friendships 4
+Edge with highest flow Edge [from=1976, to=1341]
+Node with highest centrality 130
+
+Egonets for 130 to depth 1
+
+Egonet for user: 130
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1976
+
+Egonets for 1976 to depth 1
+
+Egonet for user: 1976
+Egonet depth: 1
+Average number of friends per person: 0.4
+Number of people in graph: 5
+Number of friendships in graph: 4
+Maximum possible number of friendships in graph: 10
+Density of graph(num edges/ max num edges): 0.4
+Degree Distribution:
+Number of users with degree 1: 4
+Number of users with degree 4: 1
+Degree with most users: 4 users with degree 1
+
+Community #33
+Number of people: 9
+Number of friendships 11
+Edge with highest flow Edge [from=849, to=1975]
+Node with highest centrality 1102
+
+Egonets for 1102 to depth 1
+
+Egonet for user: 1102
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 2
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 1
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1975
+
+Egonets for 1975 to depth 1
+
+Egonet for user: 1975
+Egonet depth: 1
+Average number of friends per person: 0.42857142857142855
+Number of people in graph: 7
+Number of friendships in graph: 7
+Maximum possible number of friendships in graph: 21
+Density of graph(num edges/ max num edges): 0.3333333333333333
+Degree Distribution:
+Number of users with degree 1: 4
+Number of users with degree 2: 2
+Number of users with degree 6: 1
+Degree with most users: 4 users with degree 1
+
+Community #34
+Number of people: 6
+Number of friendships 6
+Edge with highest flow Edge [from=838, to=1973]
+Node with highest centrality 1973
+
+Egonets for 1973 to depth 1
+
+Egonet for user: 1973
+Egonet depth: 1
+Average number of friends per person: 0.4
+Number of people in graph: 5
+Number of friendships in graph: 5
+Maximum possible number of friendships in graph: 10
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 2
+Number of users with degree 4: 1
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1973
+
+Egonets for 1973 to depth 1
+
+Egonet for user: 1973
+Egonet depth: 1
+Average number of friends per person: 0.4
+Number of people in graph: 5
+Number of friendships in graph: 5
+Maximum possible number of friendships in graph: 10
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 2
+Number of users with degree 4: 1
+Degree with most users: 2 users with degree 1
+
+Community #35
+Number of people: 36
+Number of friendships 71
+Edge with highest flow Edge [from=221, to=1972]
+Node with highest centrality 1444
+
+Egonets for 1444 to depth 1
+
+Egonet for user: 1444
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1972
+
+Egonets for 1972 to depth 1
+
+Egonet for user: 1972
+Egonet depth: 1
+Average number of friends per person: 1.0
+Number of people in graph: 24
+Number of friendships in graph: 49
+Maximum possible number of friendships in graph: 276
+Density of graph(num edges/ max num edges): 0.17753623188405798
+Degree Distribution:
+Number of users with degree 1: 5
+Number of users with degree 2: 5
+Number of users with degree 3: 4
+Number of users with degree 4: 3
+Number of users with degree 5: 1
+Number of users with degree 6: 4
+Number of users with degree 7: 1
+Number of users with degree 23: 1
+Degree with most users: 5 users with degree 1
+
+Community #36
+Number of people: 3
+Number of friendships 2
+Edge with highest flow Edge [from=324, to=1971]
+Node with highest centrality 1971
+
+Egonets for 1971 to depth 1
+
+Egonet for user: 1971
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 324
+
+Egonets for 324 to depth 1
+
+Egonet for user: 324
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 2
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 1
+Degree with most users: 2 users with degree 1
+
+Community #37
+Number of people: 3
+Number of friendships 3
+Edge with highest flow Edge [from=1322, to=1481]
+Node with highest centrality 1969
+
+Egonets for 1969 to depth 1
+
+Egonet for user: 1969
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 2: 3
+Degree with most users: 3 users with degree 2
+
+Node with highest degree 1969
+
+Egonets for 1969 to depth 1
+
+Egonet for user: 1969
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 2: 3
+Degree with most users: 3 users with degree 2
+
+Community #38
+Number of people: 16
+Number of friendships 39
+Edge with highest flow Edge [from=250, to=1752]
+Node with highest centrality 1752
+
+Egonets for 1752 to depth 1
+
+Egonet for user: 1752
+Egonet depth: 1
+Average number of friends per person: 1.125
+Number of people in graph: 8
+Number of friendships in graph: 19
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.6785714285714286
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 4: 2
+Number of users with degree 5: 2
+Number of users with degree 6: 2
+Number of users with degree 7: 1
+Degree with most users: 2 users with degree 4
+
+Node with highest degree 250
+
+Egonets for 250 to depth 1
+
+Egonet for user: 250
+Egonet depth: 1
+Average number of friends per person: 1.4166666666666667
+Number of people in graph: 12
+Number of friendships in graph: 34
+Maximum possible number of friendships in graph: 66
+Density of graph(num edges/ max num edges): 0.5151515151515151
+Degree Distribution:
+Number of users with degree 2: 1
+Number of users with degree 3: 1
+Number of users with degree 4: 3
+Number of users with degree 5: 1
+Number of users with degree 6: 3
+Number of users with degree 8: 1
+Number of users with degree 9: 1
+Number of users with degree 11: 1
+Degree with most users: 3 users with degree 4
+
+Community #39
+Number of people: 17
+Number of friendships 26
+Edge with highest flow Edge [from=1967, to=937]
+Node with highest centrality 1967
+
+Egonets for 1967 to depth 1
+
+Egonet for user: 1967
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 6
+Number of friendships in graph: 5
+Maximum possible number of friendships in graph: 15
+Density of graph(num edges/ max num edges): 0.3333333333333333
+Degree Distribution:
+Number of users with degree 1: 5
+Number of users with degree 5: 1
+Degree with most users: 5 users with degree 1
+
+Node with highest degree 325
+
+Egonets for 325 to depth 1
+
+Egonet for user: 325
+Egonet depth: 1
+Average number of friends per person: 0.42857142857142855
+Number of people in graph: 7
+Number of friendships in graph: 7
+Maximum possible number of friendships in graph: 21
+Density of graph(num edges/ max num edges): 0.3333333333333333
+Degree Distribution:
+Number of users with degree 1: 4
+Number of users with degree 2: 2
+Number of users with degree 6: 1
+Degree with most users: 4 users with degree 1
+
+Community #40
+Number of people: 24
+Number of friendships 35
+Edge with highest flow Edge [from=6, to=1963]
+Node with highest centrality 1963
+
+Egonets for 1963 to depth 1
+
+Egonet for user: 1963
+Egonet depth: 1
+Average number of friends per person: 0.7222222222222222
+Number of people in graph: 18
+Number of friendships in graph: 26
+Maximum possible number of friendships in graph: 153
+Density of graph(num edges/ max num edges): 0.16993464052287582
+Degree Distribution:
+Number of users with degree 1: 7
+Number of users with degree 2: 5
+Number of users with degree 3: 3
+Number of users with degree 4: 1
+Number of users with degree 5: 1
+Number of users with degree 17: 1
+Degree with most users: 7 users with degree 1
+
+Node with highest degree 1963
+
+Egonets for 1963 to depth 1
+
+Egonet for user: 1963
+Egonet depth: 1
+Average number of friends per person: 0.7222222222222222
+Number of people in graph: 18
+Number of friendships in graph: 26
+Maximum possible number of friendships in graph: 153
+Density of graph(num edges/ max num edges): 0.16993464052287582
+Degree Distribution:
+Number of users with degree 1: 7
+Number of users with degree 2: 5
+Number of users with degree 3: 3
+Number of users with degree 4: 1
+Number of users with degree 5: 1
+Number of users with degree 17: 1
+Degree with most users: 7 users with degree 1
+
+Community #41
+Number of people: 38
+Number of friendships 84
+Edge with highest flow Edge [from=1362, to=1961]
+Node with highest centrality 1961
+
+Egonets for 1961 to depth 1
+
+Egonet for user: 1961
+Egonet depth: 1
+Average number of friends per person: 1.0869565217391304
+Number of people in graph: 23
+Number of friendships in graph: 50
+Maximum possible number of friendships in graph: 253
+Density of graph(num edges/ max num edges): 0.1976284584980237
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 6
+Number of users with degree 3: 3
+Number of users with degree 4: 5
+Number of users with degree 5: 4
+Number of users with degree 6: 1
+Number of users with degree 9: 1
+Number of users with degree 22: 1
+Degree with most users: 6 users with degree 2
+
+Node with highest degree 1961
+
+Egonets for 1961 to depth 1
+
+Egonet for user: 1961
+Egonet depth: 1
+Average number of friends per person: 1.0869565217391304
+Number of people in graph: 23
+Number of friendships in graph: 50
+Maximum possible number of friendships in graph: 253
+Density of graph(num edges/ max num edges): 0.1976284584980237
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 6
+Number of users with degree 3: 3
+Number of users with degree 4: 5
+Number of users with degree 5: 4
+Number of users with degree 6: 1
+Number of users with degree 9: 1
+Number of users with degree 22: 1
+Degree with most users: 6 users with degree 2
+
+Community #42
+Number of people: 19
+Number of friendships 23
+Edge with highest flow Edge [from=1960, to=360]
+Node with highest centrality 1960
+
+Egonets for 1960 to depth 1
+
+Egonet for user: 1960
+Egonet depth: 1
+Average number of friends per person: 0.6428571428571429
+Number of people in graph: 14
+Number of friendships in graph: 18
+Maximum possible number of friendships in graph: 91
+Density of graph(num edges/ max num edges): 0.1978021978021978
+Degree Distribution:
+Number of users with degree 1: 6
+Number of users with degree 2: 4
+Number of users with degree 3: 3
+Number of users with degree 13: 1
+Degree with most users: 6 users with degree 1
+
+Node with highest degree 1960
+
+Egonets for 1960 to depth 1
+
+Egonet for user: 1960
+Egonet depth: 1
+Average number of friends per person: 0.6428571428571429
+Number of people in graph: 14
+Number of friendships in graph: 18
+Maximum possible number of friendships in graph: 91
+Density of graph(num edges/ max num edges): 0.1978021978021978
+Degree Distribution:
+Number of users with degree 1: 6
+Number of users with degree 2: 4
+Number of users with degree 3: 3
+Number of users with degree 13: 1
+Degree with most users: 6 users with degree 1
+
+Community #43
+Number of people: 21
+Number of friendships 49
+Edge with highest flow Edge [from=234, to=1959]
+Node with highest centrality 1959
+
+Egonets for 1959 to depth 1
+
+Egonet for user: 1959
+Egonet depth: 1
+Average number of friends per person: 1.1764705882352942
+Number of people in graph: 17
+Number of friendships in graph: 40
+Maximum possible number of friendships in graph: 136
+Density of graph(num edges/ max num edges): 0.29411764705882354
+Degree Distribution:
+Number of users with degree 1: 5
+Number of users with degree 2: 3
+Number of users with degree 5: 2
+Number of users with degree 6: 1
+Number of users with degree 7: 3
+Number of users with degree 8: 2
+Number of users with degree 16: 1
+Degree with most users: 5 users with degree 1
+
+Node with highest degree 1959
+
+Egonets for 1959 to depth 1
+
+Egonet for user: 1959
+Egonet depth: 1
+Average number of friends per person: 1.1764705882352942
+Number of people in graph: 17
+Number of friendships in graph: 40
+Maximum possible number of friendships in graph: 136
+Density of graph(num edges/ max num edges): 0.29411764705882354
+Degree Distribution:
+Number of users with degree 1: 5
+Number of users with degree 2: 3
+Number of users with degree 5: 2
+Number of users with degree 6: 1
+Number of users with degree 7: 3
+Number of users with degree 8: 2
+Number of users with degree 16: 1
+Degree with most users: 5 users with degree 1
+
+Community #44
+Number of people: 4
+Number of friendships 3
+Edge with highest flow Edge [from=599, to=1958]
+Node with highest centrality 915
+
+Egonets for 915 to depth 1
+
+Egonet for user: 915
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1958
+
+Egonets for 1958 to depth 1
+
+Egonet for user: 1958
+Egonet depth: 1
+Average number of friends per person: 0.25
+Number of people in graph: 4
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 3: 1
+Degree with most users: 3 users with degree 1
+
+Community #45
+Number of people: 11
+Number of friendships 20
+Edge with highest flow Edge [from=1509, to=1733]
+Node with highest centrality 144
+
+Egonets for 144 to depth 1
+
+Egonet for user: 144
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1956
+
+Egonets for 1956 to depth 1
+
+Egonet for user: 1956
+Egonet depth: 1
+Average number of friends per person: 0.8888888888888888
+Number of people in graph: 9
+Number of friendships in graph: 16
+Maximum possible number of friendships in graph: 36
+Density of graph(num edges/ max num edges): 0.4444444444444444
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 3: 1
+Number of users with degree 4: 2
+Number of users with degree 5: 2
+Number of users with degree 8: 1
+Degree with most users: 3 users with degree 1
+
+Community #46
+Number of people: 12
+Number of friendships 18
+Edge with highest flow Edge [from=1955, to=1621]
+Node with highest centrality 608
+
+Egonets for 608 to depth 1
+
+Egonet for user: 608
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 2: 3
+Degree with most users: 3 users with degree 2
+
+Node with highest degree 1955
+
+Egonets for 1955 to depth 1
+
+Egonet for user: 1955
+Egonet depth: 1
+Average number of friends per person: 0.7777777777777778
+Number of people in graph: 9
+Number of friendships in graph: 15
+Maximum possible number of friendships in graph: 36
+Density of graph(num edges/ max num edges): 0.4166666666666667
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 2
+Number of users with degree 3: 1
+Number of users with degree 4: 2
+Number of users with degree 5: 1
+Number of users with degree 8: 1
+Degree with most users: 2 users with degree 1
+
+Community #47
+Number of people: 10
+Number of friendships 10
+Edge with highest flow Edge [from=1954, to=779]
+Node with highest centrality 346
+
+Egonets for 346 to depth 1
+
+Egonet for user: 346
+Egonet depth: 1
+Average number of friends per person: 0.25
+Number of people in graph: 4
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 3: 1
+Degree with most users: 3 users with degree 1
+
+Node with highest degree 1954
+
+Egonets for 1954 to depth 1
+
+Egonet for user: 1954
+Egonet depth: 1
+Average number of friends per person: 0.4
+Number of people in graph: 5
+Number of friendships in graph: 5
+Maximum possible number of friendships in graph: 10
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 2
+Number of users with degree 4: 1
+Degree with most users: 2 users with degree 1
+
+Community #48
+Number of people: 4
+Number of friendships 4
+Edge with highest flow Edge [from=888, to=43]
+Node with highest centrality 724
+
+Egonets for 724 to depth 1
+
+Egonet for user: 724
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1950
+
+Egonets for 1950 to depth 1
+
+Egonet for user: 1950
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 4
+Number of friendships in graph: 4
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 2
+Number of users with degree 3: 1
+Degree with most users: 2 users with degree 2
+
+Community #49
+Number of people: 10
+Number of friendships 15
+Edge with highest flow Edge [from=1949, to=1353]
+Node with highest centrality 1949
+
+Egonets for 1949 to depth 1
+
+Egonet for user: 1949
+Egonet depth: 1
+Average number of friends per person: 0.75
+Number of people in graph: 8
+Number of friendships in graph: 12
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.42857142857142855
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 3
+Number of users with degree 3: 2
+Number of users with degree 4: 1
+Number of users with degree 7: 1
+Degree with most users: 3 users with degree 2
+
+Node with highest degree 1949
+
+Egonets for 1949 to depth 1
+
+Egonet for user: 1949
+Egonet depth: 1
+Average number of friends per person: 0.75
+Number of people in graph: 8
+Number of friendships in graph: 12
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.42857142857142855
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 3
+Number of users with degree 3: 2
+Number of users with degree 4: 1
+Number of users with degree 7: 1
+Degree with most users: 3 users with degree 2
+
+Community #50
+Number of people: 17
+Number of friendships 24
+Edge with highest flow Edge [from=1484, to=1947]
+Node with highest centrality 266
+
+Egonets for 266 to depth 1
+
+Egonet for user: 266
+Egonet depth: 1
+Average number of friends per person: 0.625
+Number of people in graph: 8
+Number of friendships in graph: 11
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.39285714285714285
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 3
+Number of users with degree 3: 1
+Number of users with degree 4: 1
+Number of users with degree 7: 1
+Degree with most users: 3 users with degree 2
+
+Node with highest degree 1947
+
+Egonets for 1947 to depth 1
+
+Egonet for user: 1947
+Egonet depth: 1
+Average number of friends per person: 0.7
+Number of people in graph: 10
+Number of friendships in graph: 14
+Maximum possible number of friendships in graph: 45
+Density of graph(num edges/ max num edges): 0.3111111111111111
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 5
+Number of users with degree 3: 1
+Number of users with degree 4: 1
+Number of users with degree 9: 1
+Degree with most users: 5 users with degree 2
+
+Community #51
+Number of people: 14
+Number of friendships 27
+Edge with highest flow Edge [from=1619, to=1617]
+Node with highest centrality 1619
+
+Egonets for 1619 to depth 1
+
+Egonet for user: 1619
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 4
+Number of friendships in graph: 4
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 2
+Number of users with degree 3: 1
+Degree with most users: 2 users with degree 2
+
+Node with highest degree 1614
+
+Egonets for 1614 to depth 1
+
+Egonet for user: 1614
+Egonet depth: 1
+Average number of friends per person: 1.0
+Number of people in graph: 8
+Number of friendships in graph: 16
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.5714285714285714
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 3: 3
+Number of users with degree 4: 1
+Number of users with degree 5: 1
+Number of users with degree 6: 1
+Number of users with degree 7: 1
+Degree with most users: 3 users with degree 3
+
+Community #52
+Number of people: 6
+Number of friendships 6
+Edge with highest flow Edge [from=306, to=1945]
+Node with highest centrality 306
+
+Egonets for 306 to depth 1
+
+Egonet for user: 306
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 4
+Number of friendships in graph: 4
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 2
+Number of users with degree 3: 1
+Degree with most users: 2 users with degree 2
+
+Node with highest degree 1945
+
+Egonets for 1945 to depth 1
+
+Egonet for user: 1945
+Egonet depth: 1
+Average number of friends per person: 0.4
+Number of people in graph: 5
+Number of friendships in graph: 5
+Maximum possible number of friendships in graph: 10
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 2
+Number of users with degree 4: 1
+Degree with most users: 2 users with degree 1
+
+Community #53
+Number of people: 8
+Number of friendships 9
+Edge with highest flow Edge [from=1943, to=387]
+Node with highest centrality 387
+
+Egonets for 387 to depth 1
+
+Egonet for user: 387
+Egonet depth: 1
+Average number of friends per person: 0.25
+Number of people in graph: 4
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 3: 1
+Degree with most users: 3 users with degree 1
+
+Node with highest degree 1943
+
+Egonets for 1943 to depth 1
+
+Egonet for user: 1943
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 6
+Number of friendships in graph: 7
+Maximum possible number of friendships in graph: 15
+Density of graph(num edges/ max num edges): 0.4666666666666667
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 2
+Number of users with degree 3: 1
+Number of users with degree 5: 1
+Degree with most users: 2 users with degree 1
+
+Community #54
+Number of people: 6
+Number of friendships 8
+Edge with highest flow Edge [from=1941, to=761]
+Node with highest centrality 192
+
+Egonets for 192 to depth 1
+
+Egonet for user: 192
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 2: 3
+Degree with most users: 3 users with degree 2
+
+Node with highest degree 1941
+
+Egonets for 1941 to depth 1
+
+Egonet for user: 1941
+Egonet depth: 1
+Average number of friends per person: 0.6666666666666666
+Number of people in graph: 6
+Number of friendships in graph: 8
+Maximum possible number of friendships in graph: 15
+Density of graph(num edges/ max num edges): 0.5333333333333333
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 3
+Number of users with degree 4: 1
+Number of users with degree 5: 1
+Degree with most users: 3 users with degree 2
+
+Community #55
+Number of people: 13
+Number of friendships 24
+Edge with highest flow Edge [from=1940, to=1064]
+Node with highest centrality 834
+
+Egonets for 834 to depth 1
+
+Egonet for user: 834
+Egonet depth: 1
+Average number of friends per person: 0.75
+Number of people in graph: 4
+Number of friendships in graph: 6
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 3: 4
+Degree with most users: 4 users with degree 3
+
+Node with highest degree 1940
+
+Egonets for 1940 to depth 1
+
+Egonet for user: 1940
+Egonet depth: 1
+Average number of friends per person: 0.7777777777777778
+Number of people in graph: 9
+Number of friendships in graph: 14
+Maximum possible number of friendships in graph: 36
+Density of graph(num edges/ max num edges): 0.3888888888888889
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 3
+Number of users with degree 3: 3
+Number of users with degree 4: 1
+Number of users with degree 8: 1
+Degree with most users: 3 users with degree 2
+
+Community #56
+Number of people: 8
+Number of friendships 10
+Edge with highest flow Edge [from=1936, to=48]
+Node with highest centrality 48
+
+Egonets for 48 to depth 1
+
+Egonet for user: 48
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 4
+Number of friendships in graph: 5
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.8333333333333334
+Degree Distribution:
+Number of users with degree 2: 2
+Number of users with degree 3: 2
+Degree with most users: 2 users with degree 2
+
+Node with highest degree 1936
+
+Egonets for 1936 to depth 1
+
+Egonet for user: 1936
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 6
+Number of friendships in graph: 7
+Maximum possible number of friendships in graph: 15
+Density of graph(num edges/ max num edges): 0.4666666666666667
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 4
+Number of users with degree 5: 1
+Degree with most users: 4 users with degree 2
+
+Community #57
+Number of people: 31
+Number of friendships 51
+Edge with highest flow Edge [from=1934, to=1235]
+Node with highest centrality 1934
+
+Egonets for 1934 to depth 1
+
+Egonet for user: 1934
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 16
+Number of friendships in graph: 17
+Maximum possible number of friendships in graph: 120
+Density of graph(num edges/ max num edges): 0.14166666666666666
+Degree Distribution:
+Number of users with degree 1: 11
+Number of users with degree 2: 4
+Number of users with degree 15: 1
+Degree with most users: 11 users with degree 1
+
+Node with highest degree 1934
+
+Egonets for 1934 to depth 1
+
+Egonet for user: 1934
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 16
+Number of friendships in graph: 17
+Maximum possible number of friendships in graph: 120
+Density of graph(num edges/ max num edges): 0.14166666666666666
+Degree Distribution:
+Number of users with degree 1: 11
+Number of users with degree 2: 4
+Number of users with degree 15: 1
+Degree with most users: 11 users with degree 1
+
+Community #58
+Number of people: 8
+Number of friendships 9
+Edge with highest flow Edge [from=1331, to=897]
+Node with highest centrality 897
+
+Egonets for 897 to depth 1
+
+Egonet for user: 897
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1931
+
+Egonets for 1931 to depth 1
+
+Egonet for user: 1931
+Egonet depth: 1
+Average number of friends per person: 0.5714285714285714
+Number of people in graph: 7
+Number of friendships in graph: 8
+Maximum possible number of friendships in graph: 21
+Density of graph(num edges/ max num edges): 0.38095238095238093
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 2: 2
+Number of users with degree 3: 1
+Number of users with degree 6: 1
+Degree with most users: 3 users with degree 1
+
+Community #59
+Number of people: 5
+Number of friendships 4
+Edge with highest flow Edge [from=1930, to=1056]
+Node with highest centrality 1056
+
+Egonets for 1056 to depth 1
+
+Egonet for user: 1056
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 2
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 1
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1930
+
+Egonets for 1930 to depth 1
+
+Egonet for user: 1930
+Egonet depth: 1
+Average number of friends per person: 0.25
+Number of people in graph: 4
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 3: 1
+Degree with most users: 3 users with degree 1
+
+Community #60
+Number of people: 29
+Number of friendships 65
+Edge with highest flow Edge [from=436, to=541]
+Node with highest centrality 436
+
+Egonets for 436 to depth 1
+
+Egonet for user: 436
+Egonet depth: 1
+Average number of friends per person: 1.1
+Number of people in graph: 10
+Number of friendships in graph: 23
+Maximum possible number of friendships in graph: 45
+Density of graph(num edges/ max num edges): 0.5111111111111111
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 3: 1
+Number of users with degree 5: 4
+Number of users with degree 6: 2
+Number of users with degree 9: 1
+Degree with most users: 4 users with degree 5
+
+Node with highest degree 1928
+
+Egonets for 1928 to depth 1
+
+Egonet for user: 1928
+Egonet depth: 1
+Average number of friends per person: 0.7333333333333333
+Number of people in graph: 15
+Number of friendships in graph: 22
+Maximum possible number of friendships in graph: 105
+Density of graph(num edges/ max num edges): 0.20952380952380953
+Degree Distribution:
+Number of users with degree 1: 4
+Number of users with degree 2: 5
+Number of users with degree 3: 4
+Number of users with degree 4: 1
+Number of users with degree 14: 1
+Degree with most users: 5 users with degree 2
+
+Community #61
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=597, to=1927]
+Node with highest centrality 597
+
+Egonets for 597 to depth 1
+
+Egonet for user: 597
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 597
+
+Egonets for 597 to depth 1
+
+Egonet for user: 597
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #62
+Number of people: 2
+Number of friendships 1
+Edge with highest flow Edge [from=1926, to=1772]
+Node with highest centrality 1926
+
+Egonets for 1926 to depth 1
+
+Egonet for user: 1926
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1926
+
+Egonets for 1926 to depth 1
+
+Egonet for user: 1926
+Egonet depth: 1
+Average number of friends per person: 0.0
+Number of people in graph: 2
+Number of friendships in graph: 1
+Maximum possible number of friendships in graph: 1
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 1: 2
+Degree with most users: 2 users with degree 1
+
+Community #63
+Number of people: 4
+Number of friendships 3
+Edge with highest flow Edge [from=1923, to=1827]
+Node with highest centrality 1923
+
+Egonets for 1923 to depth 1
+
+Egonet for user: 1923
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 2
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 1
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 1923
+
+Egonets for 1923 to depth 1
+
+Egonet for user: 1923
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 2
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 0.6666666666666666
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 1
+Degree with most users: 2 users with degree 1
+
+Community #64
+Number of people: 4
+Number of friendships 3
+Edge with highest flow Edge [from=1922, to=1111]
+Node with highest centrality 1922
+
+Egonets for 1922 to depth 1
+
+Egonet for user: 1922
+Egonet depth: 1
+Average number of friends per person: 0.25
+Number of people in graph: 4
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 3: 1
+Degree with most users: 3 users with degree 1
+
+Node with highest degree 1922
+
+Egonets for 1922 to depth 1
+
+Egonet for user: 1922
+Egonet depth: 1
+Average number of friends per person: 0.25
+Number of people in graph: 4
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 6
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 3: 1
+Degree with most users: 3 users with degree 1
+
+Community #65
+Number of people: 10
+Number of friendships 10
+Edge with highest flow Edge [from=1494, to=1921]
+Node with highest centrality 1921
+
+Egonets for 1921 to depth 1
+
+Egonet for user: 1921
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 8
+Number of friendships in graph: 8
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.2857142857142857
+Degree Distribution:
+Number of users with degree 1: 5
+Number of users with degree 2: 2
+Number of users with degree 7: 1
+Degree with most users: 5 users with degree 1
+
+Node with highest degree 1921
+
+Egonets for 1921 to depth 1
+
+Egonet for user: 1921
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 8
+Number of friendships in graph: 8
+Maximum possible number of friendships in graph: 28
+Density of graph(num edges/ max num edges): 0.2857142857142857
+Degree Distribution:
+Number of users with degree 1: 5
+Number of users with degree 2: 2
+Number of users with degree 7: 1
+Degree with most users: 5 users with degree 1
+
+Community #66
+Number of people: 6
+Number of friendships 6
+Edge with highest flow Edge [from=1110, to=746]
+Node with highest centrality 1110
+
+Egonets for 1110 to depth 1
+
+Egonet for user: 1110
+Egonet depth: 1
+Average number of friends per person: 0.3333333333333333
+Number of people in graph: 3
+Number of friendships in graph: 3
+Maximum possible number of friendships in graph: 3
+Density of graph(num edges/ max num edges): 1.0
+Degree Distribution:
+Number of users with degree 2: 3
+Degree with most users: 3 users with degree 2
+
+Node with highest degree 1918
+
+Egonets for 1918 to depth 1
+
+Egonet for user: 1918
+Egonet depth: 1
+Average number of friends per person: 0.5
+Number of people in graph: 6
+Number of friendships in graph: 6
+Maximum possible number of friendships in graph: 15
+Density of graph(num edges/ max num edges): 0.4
+Degree Distribution:
+Number of users with degree 1: 3
+Number of users with degree 2: 2
+Number of users with degree 5: 1
+Degree with most users: 3 users with degree 1
+
+Community #67
+Number of people: 56
+Number of friendships 86
+Edge with highest flow Edge [from=1770, to=73]
+Node with highest centrality 1439
+
+Egonets for 1439 to depth 1
+
+Egonet for user: 1439
+Egonet depth: 1
+Average number of friends per person: 0.6
+Number of people in graph: 5
+Number of friendships in graph: 6
+Maximum possible number of friendships in graph: 10
+Density of graph(num edges/ max num edges): 0.6
+Degree Distribution:
+Number of users with degree 1: 1
+Number of users with degree 2: 2
+Number of users with degree 3: 1
+Number of users with degree 4: 1
+Degree with most users: 2 users with degree 2
+
+Node with highest degree 1917
+
+Egonets for 1917 to depth 1
+
+Egonet for user: 1917
+Egonet depth: 1
+Average number of friends per person: 0.5789473684210527
+Number of people in graph: 19
+Number of friendships in graph: 22
+Maximum possible number of friendships in graph: 171
+Density of graph(num edges/ max num edges): 0.1286549707602339
+Degree Distribution:
+Number of users with degree 1: 11
+Number of users with degree 2: 6
+Number of users with degree 3: 1
+Number of users with degree 18: 1
+Degree with most users: 11 users with degree 1
+
+Community #68
+Number of people: 997
+Number of friendships 2525
+Edge with highest flow Edge [from=1628, to=902]
+Node with highest centrality 1222
+
+Egonets for 1222 to depth 1
+
+Egonet for user: 1222
+Egonet depth: 1
+Average number of friends per person: 0.4
+Number of people in graph: 5
+Number of friendships in graph: 5
+Maximum possible number of friendships in graph: 10
+Density of graph(num edges/ max num edges): 0.5
+Degree Distribution:
+Number of users with degree 1: 2
+Number of users with degree 2: 2
+Number of users with degree 4: 1
+Degree with most users: 2 users with degree 1
+
+Node with highest degree 631
+
+Egonets for 631 to depth 1
+
+Egonet for user: 631
+Egonet depth: 1
+Average number of friends per person: 1.36
+Number of people in graph: 25
+Number of friendships in graph: 68
+Maximum possible number of friendships in graph: 300
+Density of graph(num edges/ max num edges): 0.22666666666666666
+Degree Distribution:
+Number of users with degree 1: 4
+Number of users with degree 2: 4
+Number of users with degree 3: 4
+Number of users with degree 4: 2
+Number of users with degree 5: 2
+Number of users with degree 6: 1
+Number of users with degree 7: 2
+Number of users with degree 8: 1
+Number of users with degree 9: 1
+Number of users with degree 10: 2
+Number of users with degree 13: 1
+Number of users with degree 24: 1
+Degree with most users: 4 users with degree 1
+

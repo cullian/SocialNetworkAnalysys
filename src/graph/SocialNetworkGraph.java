@@ -545,7 +545,7 @@ public class SocialNetworkGraph implements Graph {
 		SocialNetworkGraph test = new SocialNetworkGraph();
 		// SocialNetworkGraph test2 = new SocialNetworkGraph();
 		// SocialNetworkGraph test3 = new SocialNetworkGraph();
-		GraphLoader.loadGraph(test, "data/facebook_2000.txt");
+		GraphLoader.loadGraph(test, "data/facebook_ucsd.txt");
 		// GraphLoader.loadGraph(test2, "data/test5.txt");
 		// GraphLoader.loadGraph(test3, "data/test6.txt");
 		// test2.addFriend(0);
@@ -556,7 +556,7 @@ public class SocialNetworkGraph implements Graph {
 		// test.removeEdge(3, 4);
 		// test.printStats();
 		// test.printGraph();
-		test.analyzeCommunities(1000);
+		test.analyzeCommunities(5000);
 
 	}
 

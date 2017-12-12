@@ -76,7 +76,7 @@ public class Node {
 	}
 
 	public HashSet<Edge> getFriends() {
-		return new HashSet<Edge>(friendships);
+		return friendships;
 	}
 
 	@Override
